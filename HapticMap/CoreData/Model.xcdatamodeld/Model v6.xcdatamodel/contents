@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Element" representedClassName="Element" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <relationship name="descriptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LocalizedText" inverseName="category" inverseEntity="LocalizedText"/>
+        <relationship name="map" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Map" inverseName="elements" inverseEntity="Map"/>
+    </entity>
+    <entity name="Itinerary" representedClassName="Itinerary" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="maps" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Map" inverseName="itinerary" inverseEntity="Map"/>
+    </entity>
+    <entity name="LocalizedText" representedClassName="LocalizedText" syncable="YES">
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Element" inverseName="descriptions" inverseEntity="Element"/>
+    </entity>
+    <entity name="Map" representedClassName="Map" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <relationship name="elements" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Element" inverseName="map" inverseEntity="Element"/>
+        <relationship name="itinerary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Itinerary" inverseName="maps" inverseEntity="Itinerary"/>
+    </entity>
+    <elements>
+        <element name="Element" positionX="-54" positionY="36" width="128" height="74"/>
+        <element name="Itinerary" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="LocalizedText" positionX="-45" positionY="45" width="128" height="74"/>
+        <element name="Map" positionX="-63" positionY="0" width="128" height="104"/>
+    </elements>
+</model>

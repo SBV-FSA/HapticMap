@@ -1,0 +1,197 @@
+/* Add action */
+"actions.add" = "Ajouter";
+
+/* Delete action */
+"actions.delete" = "Supprimer";
+
+/* Delete action */
+"actions.deleteAll" = "Tout supprimer";
+
+/* Done action */
+"actions.done" = "Terminer";
+
+/* Edit action */
+"actions.edit" = "Modifier";
+
+/* Rename action */
+"actions.rename" = "Renommer";
+
+/* Share action */
+"actions.share" = "Partager";
+
+/* When a translation already exists for all available languages */
+"all_translations_already_exists" = "Il y a déjà une traduction pour toutes les langues disponibles.";
+
+/* Indicates the user that an error has occured */
+"an_error_has_occured" = "Une erreur est survenue";
+
+/* Name of the audio feedback type */
+"audio_feedback" = "Audio";
+
+/* Border of the map */
+"border" = "Bord de la carte";
+
+/* Building */
+"building" = "Bâtiment";
+
+/* Cancel */
+"cancel" = "Annuler";
+
+/* Categories */
+"categories" = "Catégories";
+
+/* When a user wants to upload a file, he has to choose a source */
+"choose_a_location" = "Choisir un emplacement.";
+
+/* Custom category */
+"custom" = "Elément générique";
+
+/* User defined map element category */
+"custom_categories" = "Catégories personnalisées";
+
+/* Described Elements */
+"described_elements" = "Eléments décrits";
+
+/* A description of something */
+"description" = "Description";
+
+/* Destination on a map */
+"destination" = "Destination";
+
+/* The action of modifying something */
+"edit" = "Modifier";
+
+/* Empty category */
+"empty" = "Vide";
+
+/* Impossible to create a new map. This might be due to a lack of space on the device */
+"error_creation_failed" = "Impossible de créer une nouvelle carte. Cela peut- tre dû à un manque de place sur l'appareil.";
+
+/* Indicates that the given file was not found */
+"error_file_not_found" = "Le fichier indiqué est introuvable.";
+
+/* Indicates that a fils is expected but isn't found */
+"error_missing_file" = "Vous devez d'abord importer un fichier.";
+
+/* Indicates that an itinerary is expected but isn't found */
+"error_missing_itinerary" = "L'itinéraire est introuvable. Impossible de sauvegarder. Réessayez plus tard.";
+
+/* Indicates that a map is expected but isn't found */
+"error_missing_map" = "La carte est introuvable. Impossible de sauvegarder. Réessayez plus tard.";
+
+/* Indicates that an error occured during saving */
+"error_saving_failed" = "Une erreur est survenue pendant l'enregistrement. Veuillez réesayer plus tard.";
+
+/* Indicates that a file is saved */
+"file_saved" = "Fichier enregistré";
+
+/* Name to describe all types of feedbacks */
+"feedbackTypes" = "Types de retour";
+
+/* Name of the haptic feedback type */
+"haptic_feedback" = "Haptic";
+
+/* A title indicating that more options are available */
+"more_options" = "Plus d'options";
+
+/* A map element having no user defined description of it */
+"no_description" = "Aucune description";
+
+/* On the itineraries list, when the user has no itineraries */
+"no_itineraries" = "Il n'y a pas d'itinéraire enregistré.";
+
+/* On the maps list, when the user has nos maps */
+"no_maps" = "Il n'y a pas de carte enregistrée.";
+
+/* On State */
+"on" = "Activé";
+
+/* Off State */
+"off" = "Désactivé";
+
+/* iOS Files */
+"files" = "Fichiers";
+
+/* An image form the device photo library */
+"image_from_library" = "Image de la photothèque";
+
+/* The action to import a file */
+"import_file" = "Importer un fichier";
+
+/* Informations about how to import a file */
+"import_informations" = "Vous pouvez importer des cartes au format image. Vous pouvez également ouvrir ces fichiers depuis l'app mail et choisir \"Ouvrir avec Haptic Maps\".";
+
+/* Intersection category */
+"intersection" = "Intersection";
+
+/* List of multiple itinary */
+"itineraries" = "Itinéraires";
+
+/* Itinerary */
+"itinerary" = "Itinéraire";
+
+/* A language */
+"language" = "Langue";
+
+/* One map */
+"map" = "Carte";
+
+/* List of maps */
+"maps" = "Cartes";
+
+/* Name of an item */
+"name" = "Nom";
+
+/* Creation of a new itinerary */
+"new_itinerary" = "Nouvel itinéraire";
+
+/* Creation of a new map */
+"new_map" = "Nouvelle carte";
+
+/* Creation of a new translation */
+"new_translation" = "Nouvelle traduction";
+
+/* A title for official map element categories */
+"official_categories" = "Catégories officielles";
+
+/* Pedestrian Crossing */
+"pedestrianCrossing" = "Passage piéton";
+
+/* Pedestrian Crossing with Lights */
+"pedestrianCrossingWithLights" = "Passage piéton avec feux";
+
+/* iOS Photo Library */
+"photo_library" = "Bibliothèque photo";
+
+/* Road */
+"road" = "Route";
+
+/* Settings */
+"settings" = "Réglages";
+
+/* Spoken feedback */
+"spoken_feedback" = "Description audio";
+
+/* Sound Feedback */
+"sound_feedback" = "Sons";
+
+/* Refers to the state of an element, like active of inactive */
+"state" = "État";
+
+/* A title for a list of translations */
+"translations" = "Traductions";
+
+/* Colors beeing not beeing assigned to a map element yet */
+"unassigned_colors" = "Couleurs non attribuées";
+
+/* Unavailable */
+"unavailable" = "Indisponible";
+
+/* Unavailable on this device */
+"unavailable_on_this_device" = "Indisponible sur cet appareil";
+
+/* Itinerary with no title */
+"unnamed_itinerary" = "Itinéraire sans nom...";
+
+/* Map with no title */
+"unnamed_map" = "Carte sans nom...";

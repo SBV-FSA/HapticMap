@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "map-size-color-test.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

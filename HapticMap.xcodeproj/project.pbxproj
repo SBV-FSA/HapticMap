@@ -1,0 +1,1518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23225EEB270AEEEA00DFC12E /* HapticMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */; };
+		23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EEE270AEEEB00DFC12E /* Assets.xcassets */; };
+		23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */; };
+		23225F08270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F07270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift */; };
+		23225F19270AF09400DFC12E /* ItinerariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F18270AF09400DFC12E /* ItinerariesView.swift */; };
+		23225F1B270AF0E400DFC12E /* ItinariesVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F1A270AF0E400DFC12E /* ItinariesVMProtocol.swift */; };
+		23225F1D270AF17F00DFC12E /* ItinariesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F1C270AF17F00DFC12E /* ItinariesVM.swift */; };
+		23225F21270AF23F00DFC12E /* FakeItinerariesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F20270AF23F00DFC12E /* FakeItinerariesVM.swift */; };
+		23270F90270F1D7E00FBDC37 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23270F92270F1D7E00FBDC37 /* Localizable.strings */; };
+		23270F95270F342900FBDC37 /* ItinariesViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23270F94270F342900FBDC37 /* ItinariesViewUITests.swift */; };
+		2350EFD8276A3BF300E2B6A3 /* FakeLocalizedTextsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFD7276A3BF300E2B6A3 /* FakeLocalizedTextsVM.swift */; };
+		2350EFDA276A3C0B00E2B6A3 /* LocalizedTextsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFD9276A3C0B00E2B6A3 /* LocalizedTextsVM.swift */; };
+		2350EFDC276A3C2A00E2B6A3 /* LocalizedTextsVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFDB276A3C2A00E2B6A3 /* LocalizedTextsVMProtocol.swift */; };
+		2350EFDF276B354200E2B6A3 /* MapInfoVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFDE276B354200E2B6A3 /* MapInfoVMProtocol.swift */; };
+		2350EFE1276B354800E2B6A3 /* MapInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFE0276B354800E2B6A3 /* MapInfoVM.swift */; };
+		2350EFE3276B354F00E2B6A3 /* FakeMapInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFE2276B354F00E2B6A3 /* FakeMapInfoVM.swift */; };
+		2350EFE6276B360F00E2B6A3 /* NewLocalizedTextVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFE5276B360F00E2B6A3 /* NewLocalizedTextVMProtocol.swift */; };
+		2350EFE8276B362300E2B6A3 /* NewLocalizedTextVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFE7276B362300E2B6A3 /* NewLocalizedTextVM.swift */; };
+		2350EFEA276B363300E2B6A3 /* FakeNewLocalizedTextVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2350EFE9276B363300E2B6A3 /* FakeNewLocalizedTextVM.swift */; };
+		2351416C272BE806007436AF /* NewItineraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351416B272BE806007436AF /* NewItineraryView.swift */; };
+		2351416E272C2B55007436AF /* NewItineraryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351416D272C2B55007436AF /* NewItineraryVM.swift */; };
+		23514171272C2B90007436AF /* NewItineraryVMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23514170272C2B90007436AF /* NewItineraryVMError.swift */; };
+		23514173272C2B9E007436AF /* NewItineraryVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23514172272C2B9E007436AF /* NewItineraryVMProtocol.swift */; };
+		23514175272C2BAE007436AF /* FakeNewItineraryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23514174272C2BAE007436AF /* FakeNewItineraryVM.swift */; };
+		23514177272FD0D2007436AF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23514176272FD0D2007436AF /* Category.swift */; };
+		23514179272FE785007436AF /* FeedbacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23514178272FE785007436AF /* FeedbacksView.swift */; };
+		2351417B272FF241007436AF /* PreferenceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351417A272FF241007436AF /* PreferenceRepository.swift */; };
+		2351417D272FF253007436AF /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351417C272FF253007436AF /* Feedback.swift */; };
+		2351417F273010E6007436AF /* UserDefaults + makeClearedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351417E273010E6007436AF /* UserDefaults + makeClearedInstance.swift */; };
+		2360349227390A12000793D3 /* VerticalLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2360349127390A12000793D3 /* VerticalLabelStyle.swift */; };
+		23603495273910DD000793D3 /* MapDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23603494273910DD000793D3 /* MapDropDelegate.swift */; };
+		236034982739134C000793D3 /* FeedbackOptionsVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236034972739134C000793D3 /* FeedbackOptionsVMProtocol.swift */; };
+		2360349A27391366000793D3 /* FeedbackOptionsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2360349927391366000793D3 /* FeedbackOptionsVM.swift */; };
+		2360349C273913F6000793D3 /* FakeFeedbackOptionsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2360349B273913F6000793D3 /* FakeFeedbackOptionsVM.swift */; };
+		2360349E27391960000793D3 /* NewItineraryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2360349D27391960000793D3 /* NewItineraryViewModelTests.swift */; };
+		236034A32739441D000793D3 /* ItineraryDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236034A22739441D000793D3 /* ItineraryDto.swift */; };
+		236034A527394434000793D3 /* MapDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236034A427394434000793D3 /* MapDto.swift */; };
+		236034AB27394A60000793D3 /* document_icon_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 236034A727394A60000793D3 /* document_icon_64.png */; };
+		236034AC27394A60000793D3 /* document_icon_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 236034A827394A60000793D3 /* document_icon_22.png */; };
+		236034AD27394A60000793D3 /* document_icon_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 236034A927394A60000793D3 /* document_icon_320.png */; };
+		236034AE27394A60000793D3 /* document_icon_44.png in Resources */ = {isa = PBXBuildFile; fileRef = 236034AA27394A60000793D3 /* document_icon_44.png */; };
+		236034B0273A5A78000793D3 /* MapNSItemProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236034AF273A5A78000793D3 /* MapNSItemProviderTests.swift */; };
+		2361B1B72785E35800903D39 /* CHHapticPattern + patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361B1B62785E35800903D39 /* CHHapticPattern + patterns.swift */; };
+		238B2AF82718259C0030CA75 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2AF72718259C0030CA75 /* Repository.swift */; };
+		238B2B02271881E20030CA75 /* ItinerariesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2B01271881E20030CA75 /* ItinerariesRepositoryTests.swift */; };
+		238B2B072718875D0030CA75 /* ItineraryFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2B062718875D0030CA75 /* ItineraryFetchTests.swift */; };
+		238B2B09271888A30030CA75 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2B08271888A30030CA75 /* TestCoreDataStack.swift */; };
+		238B2B0B27196EFF0030CA75 /* ErrorPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B2B0A27196EFF0030CA75 /* ErrorPacket.swift */; };
+		2392B7CF272169DC0066189D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7CE272169DC0066189D /* CustomTextField.swift */; };
+		2392B7D1272186BE0066189D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7D0272186BE0066189D /* ImagePicker.swift */; };
+		2392B7D52721B1120066189D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7D42721B1120066189D /* MessageView.swift */; };
+		2392B7DC2726AB260066189D /* NewMapVMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7DB2726AB260066189D /* NewMapVMError.swift */; };
+		2392B7DE2726B3570066189D /* FakeNewMapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7DD2726B3570066189D /* FakeNewMapVM.swift */; };
+		2392B7E02726B7120066189D /* URL + humanReadableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7DF2726B7120066189D /* URL + humanReadableName.swift */; };
+		2392B7E22726B78A0066189D /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E12726B78A0066189D /* URLExtensionsTests.swift */; };
+		2392B7E42726CD8B0066189D /* NewMapViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E32726CD8B0066189D /* NewMapViewUITests.swift */; };
+		2392B7E62726E09D0066189D /* SheetPresentationModeTesterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E52726E09D0066189D /* SheetPresentationModeTesterView.swift */; };
+		2392B7E82726E7A00066189D /* NewMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E72726E7A00066189D /* NewMapViewModelTests.swift */; };
+		2392B7EB2726E88E0066189D /* FakeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7EA2726E88E0066189D /* FakeRepository.swift */; };
+		23937CAF270DF5C500AC5FE1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23937CAE270DF5C500AC5FE1 /* CloudKit.framework */; };
+		239AA990271ECB85001A4193 /* NewMapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AA98F271ECB85001A4193 /* NewMapVM.swift */; };
+		239AA992271ECB8D001A4193 /* NewMapVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AA991271ECB8D001A4193 /* NewMapVMProtocol.swift */; };
+		239AA997271ECBCA001A4193 /* NewMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AA996271ECBCA001A4193 /* NewMapView.swift */; };
+		239F34D32732B41E00B517E4 /* PreferenceRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239F34D22732B41E00B517E4 /* PreferenceRepositoryTests.swift */; };
+		239F34D52733D78B00B517E4 /* concrete_3.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 239F34D42733D78B00B517E4 /* concrete_3.ahap */; };
+		239F34D72733E5D600B517E4 /* intersection.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F34D62733E5D600B517E4 /* intersection.wav */; };
+		239F34D9273406B100B517E4 /* car_crash_1.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 239F34D8273406B100B517E4 /* car_crash_1.ahap */; };
+		239F34DB2734075900B517E4 /* border.wav in Resources */ = {isa = PBXBuildFile; fileRef = 239F34DA2734075900B517E4 /* border.wav */; };
+		23A7E5482742A76D004D3F9C /* ActivityItemWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A7E5472742A76D004D3F9C /* ActivityItemWrapper.swift */; };
+		23BA1897270DCAFD00A18F4A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23BA1895270DCAFD00A18F4A /* Model.xcdatamodeld */; };
+		23BA1899270DCBFD00A18F4A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BA1898270DCBFD00A18F4A /* PersistenceController.swift */; };
+		23C7695B278D8EFD001694DD /* ToneOutputUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C7695A278D8EFD001694DD /* ToneOutputUnit.swift */; };
+		23C7695D278DAEFF001694DD /* sounds_license.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 23C7695C278DAEFF001694DD /* sounds_license.rtf */; };
+		23D927722747F91A000018CB /* Map+NSItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D927712747F91A000018CB /* Map+NSItemProvider.swift */; };
+		23D927742747F94E000018CB /* Itinerary+NSItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D927732747F94E000018CB /* Itinerary+NSItemProvider.swift */; };
+		23D927762754FC1C000018CB /* MapInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D927752754FC1C000018CB /* MapInfoView.swift */; };
+		23D9277A275504D5000018CB /* UIImage + colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D92779275504D5000018CB /* UIImage + colors.swift */; };
+		23D92787275E029C000018CB /* Element+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D92783275E029C000018CB /* Element+CoreDataClass.swift */; };
+		23D92788275E029C000018CB /* Element+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D92784275E029C000018CB /* Element+CoreDataProperties.swift */; };
+		23D92789275E029C000018CB /* LocalizedText+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D92785275E029C000018CB /* LocalizedText+CoreDataClass.swift */; };
+		23D9278A275E029C000018CB /* LocalizedText+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D92786275E029C000018CB /* LocalizedText+CoreDataProperties.swift */; };
+		23D9278C275F4AD8000018CB /* LocalizedTextsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9278B275F4AD8000018CB /* LocalizedTextsView.swift */; };
+		23D9278E275F5E8E000018CB /* NewLocalizedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D9278D275F5E8E000018CB /* NewLocalizedTextView.swift */; };
+		23E047302719978E00B8AB7C /* ItineraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0472F2719978E00B8AB7C /* ItineraryView.swift */; };
+		23E04733271997A800B8AB7C /* ItineraryVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04732271997A800B8AB7C /* ItineraryVMProtocol.swift */; };
+		23E04735271997AD00B8AB7C /* ItineraryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04734271997AD00B8AB7C /* ItineraryVM.swift */; };
+		23E047382719984600B8AB7C /* FakeItineraryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E047372719984600B8AB7C /* FakeItineraryVM.swift */; };
+		23E0473D2719A69E00B8AB7C /* Itinerary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E047392719A69E00B8AB7C /* Itinerary+CoreDataClass.swift */; };
+		23E0473E2719A69E00B8AB7C /* Itinerary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0473A2719A69E00B8AB7C /* Itinerary+CoreDataProperties.swift */; };
+		23E0473F2719A69E00B8AB7C /* Map+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0473B2719A69E00B8AB7C /* Map+CoreDataClass.swift */; };
+		23E047402719A69E00B8AB7C /* Map+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0473C2719A69E00B8AB7C /* Map+CoreDataProperties.swift */; };
+		23E04743271D715D00B8AB7C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04742271D715D00B8AB7C /* MapView.swift */; };
+		23E04766271D883000B8AB7C /* MapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04764271D883000B8AB7C /* MapContainerViewController.swift */; };
+		23E04767271D883000B8AB7C /* MapContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E04765271D883000B8AB7C /* MapContainerViewController.xib */; };
+		23E0476A271DA42600B8AB7C /* UIColor + hexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04769271DA42600B8AB7C /* UIColor + hexString.swift */; };
+		23E0476C271DA6D800B8AB7C /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0476B271DA6D800B8AB7C /* UIColorExtensionsTests.swift */; };
+		23E0476E271DACF200B8AB7C /* UIView + colorOfPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0476D271DACF200B8AB7C /* UIView + colorOfPoint.swift */; };
+		23E04770271DB47500B8AB7C /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0476F271DB47500B8AB7C /* UIViewExtensionsTests.swift */; };
+		23E04773271DC2E500B8AB7C /* MapContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04772271DC2E500B8AB7C /* MapContainer.swift */; };
+		23E04776271DC59E00B8AB7C /* MapVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04775271DC59E00B8AB7C /* MapVMProtocol.swift */; };
+		23E04778271DC5A400B8AB7C /* MapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04777271DC5A400B8AB7C /* MapVM.swift */; };
+		23E0477A271DC61600B8AB7C /* MockMapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04779271DC61600B8AB7C /* MockMapVM.swift */; };
+		23E0477C271EA9D300B8AB7C /* ItineraryViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0477B271EA9D300B8AB7C /* ItineraryViewUITests.swift */; };
+		23E0477E271EAC0500B8AB7C /* MapViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0477D271EAC0500B8AB7C /* MapViewUITests.swift */; };
+		23E04782271EB17800B8AB7C /* AudioFeedbackObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04781271EB17800B8AB7C /* AudioFeedbackObserver.swift */; };
+		23E04786271EB19800B8AB7C /* FeedbackObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04785271EB19800B8AB7C /* FeedbackObserver.swift */; };
+		23E04788271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04787271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift */; };
+		23E0478B271EB46B00B8AB7C /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0478A271EB46B00B8AB7C /* RepositoryProtocol.swift */; };
+		23E0478D271EB47A00B8AB7C /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0478C271EB47A00B8AB7C /* RepositoryError.swift */; };
+		23E0A6C3273A69D200BCE71B /* ItineraryNSItemProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0A6C2273A69D200BCE71B /* ItineraryNSItemProviderTests.swift */; };
+		23E0A6C5273A81FF00BCE71B /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0A6C4273A81FF00BCE71B /* ActivityView.swift */; };
+		23E0A6C7273A930900BCE71B /* FeedbackCategoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0A6C6273A930900BCE71B /* FeedbackCategoriesUITests.swift */; };
+		23E0A6C8273A9EC300BCE71B /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351417C272FF253007436AF /* Feedback.swift */; };
+		23F548D727301BA600144DC2 /* FeedbacksVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548D627301BA600144DC2 /* FeedbacksVMProtocol.swift */; };
+		23F548D927301BAD00144DC2 /* FeedbacksVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548D827301BAD00144DC2 /* FeedbacksVM.swift */; };
+		23F548DB27301BE200144DC2 /* FeedbackStateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548DA27301BE200144DC2 /* FeedbackStateWrapper.swift */; };
+		23F548DD27301D1500144DC2 /* FakeFeedbacksVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548DC27301D1500144DC2 /* FakeFeedbacksVM.swift */; };
+		23F548DF27301E4000144DC2 /* HapticFeedbackObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548DE27301E4000144DC2 /* HapticFeedbackObserver.swift */; };
+		23F548E1273143E700144DC2 /* SpokenFeedbackObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548E0273143E700144DC2 /* SpokenFeedbackObserver.swift */; };
+		23F548E3273161F100144DC2 /* SoundFeedbackObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548E2273161F100144DC2 /* SoundFeedbackObserver.swift */; };
+		23F548E52731622A00144DC2 /* destination.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23F548E42731622A00144DC2 /* destination.wav */; };
+		23F548E72731898400144DC2 /* FeedbackOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548E62731898400144DC2 /* FeedbackOptionsView.swift */; };
+		23FE046D27732A220059D776 /* CategoriesStateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE046C27732A220059D776 /* CategoriesStateWrapper.swift */; };
+		23FE0473277332880059D776 /* UIImage + color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE0472277332880059D776 /* UIImage + color.swift */; };
+		23FE0475277332E90059D776 /* UIColor + rgba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE0474277332E90059D776 /* UIColor + rgba.swift */; };
+		23FE0477277332FC0059D776 /* UIColor + distanceSquared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE0476277332FC0059D776 /* UIColor + distanceSquared.swift */; };
+		23FE04792773330E0059D776 /* UIColor + distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE04782773330E0059D776 /* UIColor + distance.swift */; };
+		23FE047B2773331D0059D776 /* UIColor + isSimilar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE047A2773331D0059D776 /* UIColor + isSimilar.swift */; };
+		23FE047D277353BE0059D776 /* ElementDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE047C277353BE0059D776 /* ElementDto.swift */; };
+		23FE047F277353D10059D776 /* LocalizedTextDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FE047E277353D10059D776 /* LocalizedTextDto.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23225EF8270AEEEB00DFC12E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23225EDF270AEEEA00DFC12E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23225EE6270AEEEA00DFC12E;
+			remoteInfo = HapticMap;
+		};
+		23225F02270AEEEB00DFC12E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23225EDF270AEEEA00DFC12E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23225EE6270AEEEA00DFC12E;
+			remoteInfo = HapticMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23225EE7270AEEEA00DFC12E /* HapticMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticMapApp.swift; sourceTree = "<group>"; };
+		23225EEE270AEEEB00DFC12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23225EF7270AEEEB00DFC12E /* HapticMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapticMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23225F01270AEEEB00DFC12E /* HapticMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapticMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23225F07270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23225F18270AF09400DFC12E /* ItinerariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesView.swift; sourceTree = "<group>"; };
+		23225F1A270AF0E400DFC12E /* ItinariesVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinariesVMProtocol.swift; sourceTree = "<group>"; };
+		23225F1C270AF17F00DFC12E /* ItinariesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinariesVM.swift; sourceTree = "<group>"; };
+		23225F20270AF23F00DFC12E /* FakeItinerariesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeItinerariesVM.swift; sourceTree = "<group>"; };
+		23225F22270AF67100DFC12E /* HapticMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HapticMap.entitlements; sourceTree = "<group>"; };
+		23270F91270F1D7E00FBDC37 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23270F93270F1D8400FBDC37 /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23270F94270F342900FBDC37 /* ItinariesViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinariesViewUITests.swift; sourceTree = "<group>"; };
+		2350EFD7276A3BF300E2B6A3 /* FakeLocalizedTextsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLocalizedTextsVM.swift; sourceTree = "<group>"; };
+		2350EFD9276A3C0B00E2B6A3 /* LocalizedTextsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedTextsVM.swift; sourceTree = "<group>"; };
+		2350EFDB276A3C2A00E2B6A3 /* LocalizedTextsVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedTextsVMProtocol.swift; sourceTree = "<group>"; };
+		2350EFDE276B354200E2B6A3 /* MapInfoVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoVMProtocol.swift; sourceTree = "<group>"; };
+		2350EFE0276B354800E2B6A3 /* MapInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoVM.swift; sourceTree = "<group>"; };
+		2350EFE2276B354F00E2B6A3 /* FakeMapInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMapInfoVM.swift; sourceTree = "<group>"; };
+		2350EFE5276B360F00E2B6A3 /* NewLocalizedTextVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocalizedTextVMProtocol.swift; sourceTree = "<group>"; };
+		2350EFE7276B362300E2B6A3 /* NewLocalizedTextVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocalizedTextVM.swift; sourceTree = "<group>"; };
+		2350EFE9276B363300E2B6A3 /* FakeNewLocalizedTextVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewLocalizedTextVM.swift; sourceTree = "<group>"; };
+		2351416B272BE806007436AF /* NewItineraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItineraryView.swift; sourceTree = "<group>"; };
+		2351416D272C2B55007436AF /* NewItineraryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItineraryVM.swift; sourceTree = "<group>"; };
+		23514170272C2B90007436AF /* NewItineraryVMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItineraryVMError.swift; sourceTree = "<group>"; };
+		23514172272C2B9E007436AF /* NewItineraryVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItineraryVMProtocol.swift; sourceTree = "<group>"; };
+		23514174272C2BAE007436AF /* FakeNewItineraryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewItineraryVM.swift; sourceTree = "<group>"; };
+		23514176272FD0D2007436AF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		23514178272FE785007436AF /* FeedbacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksView.swift; sourceTree = "<group>"; };
+		2351417A272FF241007436AF /* PreferenceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceRepository.swift; sourceTree = "<group>"; };
+		2351417C272FF253007436AF /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		2351417E273010E6007436AF /* UserDefaults + makeClearedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + makeClearedInstance.swift"; sourceTree = "<group>"; };
+		2360349127390A12000793D3 /* VerticalLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLabelStyle.swift; sourceTree = "<group>"; };
+		23603494273910DD000793D3 /* MapDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDropDelegate.swift; sourceTree = "<group>"; };
+		236034972739134C000793D3 /* FeedbackOptionsVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackOptionsVMProtocol.swift; sourceTree = "<group>"; };
+		2360349927391366000793D3 /* FeedbackOptionsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackOptionsVM.swift; sourceTree = "<group>"; };
+		2360349B273913F6000793D3 /* FakeFeedbackOptionsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeFeedbackOptionsVM.swift; sourceTree = "<group>"; };
+		2360349D27391960000793D3 /* NewItineraryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItineraryViewModelTests.swift; sourceTree = "<group>"; };
+		236034A22739441D000793D3 /* ItineraryDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryDto.swift; sourceTree = "<group>"; };
+		236034A427394434000793D3 /* MapDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDto.swift; sourceTree = "<group>"; };
+		236034A727394A60000793D3 /* document_icon_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document_icon_64.png; sourceTree = "<group>"; };
+		236034A827394A60000793D3 /* document_icon_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document_icon_22.png; sourceTree = "<group>"; };
+		236034A927394A60000793D3 /* document_icon_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document_icon_320.png; sourceTree = "<group>"; };
+		236034AA27394A60000793D3 /* document_icon_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document_icon_44.png; sourceTree = "<group>"; };
+		236034AF273A5A78000793D3 /* MapNSItemProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNSItemProviderTests.swift; sourceTree = "<group>"; };
+		2361B1B62785E35800903D39 /* CHHapticPattern + patterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CHHapticPattern + patterns.swift"; sourceTree = "<group>"; };
+		23727C37272714F3002E10F3 /* Model v5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model v5.xcdatamodel"; sourceTree = "<group>"; };
+		238B2AF72718259C0030CA75 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		238B2B01271881E20030CA75 /* ItinerariesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesRepositoryTests.swift; sourceTree = "<group>"; };
+		238B2B062718875D0030CA75 /* ItineraryFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryFetchTests.swift; sourceTree = "<group>"; };
+		238B2B08271888A30030CA75 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
+		238B2B0A27196EFF0030CA75 /* ErrorPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPacket.swift; sourceTree = "<group>"; };
+		238B2B0C271974B70030CA75 /* Model v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model v2.xcdatamodel"; sourceTree = "<group>"; };
+		2392B7CE272169DC0066189D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2392B7D0272186BE0066189D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2392B7D42721B1120066189D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		2392B7D82722ACCC0066189D /* Model v4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model v4.xcdatamodel"; sourceTree = "<group>"; };
+		2392B7DB2726AB260066189D /* NewMapVMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapVMError.swift; sourceTree = "<group>"; };
+		2392B7DD2726B3570066189D /* FakeNewMapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewMapVM.swift; sourceTree = "<group>"; };
+		2392B7DF2726B7120066189D /* URL + humanReadableName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + humanReadableName.swift"; sourceTree = "<group>"; };
+		2392B7E12726B78A0066189D /* URLExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionsTests.swift; sourceTree = "<group>"; };
+		2392B7E32726CD8B0066189D /* NewMapViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapViewUITests.swift; sourceTree = "<group>"; };
+		2392B7E52726E09D0066189D /* SheetPresentationModeTesterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentationModeTesterView.swift; sourceTree = "<group>"; };
+		2392B7E72726E7A00066189D /* NewMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapViewModelTests.swift; sourceTree = "<group>"; };
+		2392B7EA2726E88E0066189D /* FakeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRepository.swift; sourceTree = "<group>"; };
+		23937CAC270DF5B500AC5FE1 /* HapticMapRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HapticMapRelease.entitlements; sourceTree = "<group>"; };
+		23937CAE270DF5C500AC5FE1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		239AA98F271ECB85001A4193 /* NewMapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapVM.swift; sourceTree = "<group>"; };
+		239AA991271ECB8D001A4193 /* NewMapVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapVMProtocol.swift; sourceTree = "<group>"; };
+		239AA996271ECBCA001A4193 /* NewMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapView.swift; sourceTree = "<group>"; };
+		239F34D22732B41E00B517E4 /* PreferenceRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceRepositoryTests.swift; sourceTree = "<group>"; };
+		239F34D42733D78B00B517E4 /* concrete_3.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = concrete_3.ahap; sourceTree = "<group>"; };
+		239F34D62733E5D600B517E4 /* intersection.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = intersection.wav; sourceTree = "<group>"; };
+		239F34D8273406B100B517E4 /* car_crash_1.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = car_crash_1.ahap; sourceTree = "<group>"; };
+		239F34DA2734075900B517E4 /* border.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = border.wav; sourceTree = "<group>"; };
+		23A7E5472742A76D004D3F9C /* ActivityItemWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemWrapper.swift; sourceTree = "<group>"; };
+		23BA1896270DCAFD00A18F4A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		23BA1898270DCBFD00A18F4A /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		23BA189C270DE8D400A18F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		23C7695A278D8EFD001694DD /* ToneOutputUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneOutputUnit.swift; sourceTree = "<group>"; };
+		23C7695C278DAEFF001694DD /* sounds_license.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = sounds_license.rtf; sourceTree = "<group>"; };
+		23D9276E2747DFDB000018CB /* Model v6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model v6.xcdatamodel"; sourceTree = "<group>"; };
+		23D927712747F91A000018CB /* Map+NSItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+NSItemProvider.swift"; sourceTree = "<group>"; };
+		23D927732747F94E000018CB /* Itinerary+NSItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Itinerary+NSItemProvider.swift"; sourceTree = "<group>"; };
+		23D927752754FC1C000018CB /* MapInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoView.swift; sourceTree = "<group>"; };
+		23D92779275504D5000018CB /* UIImage + colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + colors.swift"; sourceTree = "<group>"; };
+		23D92783275E029C000018CB /* Element+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Element+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23D92784275E029C000018CB /* Element+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Element+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23D92785275E029C000018CB /* LocalizedText+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedText+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23D92786275E029C000018CB /* LocalizedText+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedText+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23D9278B275F4AD8000018CB /* LocalizedTextsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedTextsView.swift; sourceTree = "<group>"; };
+		23D9278D275F5E8E000018CB /* NewLocalizedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocalizedTextView.swift; sourceTree = "<group>"; };
+		23E0472F2719978E00B8AB7C /* ItineraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryView.swift; sourceTree = "<group>"; };
+		23E04732271997A800B8AB7C /* ItineraryVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryVMProtocol.swift; sourceTree = "<group>"; };
+		23E04734271997AD00B8AB7C /* ItineraryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryVM.swift; sourceTree = "<group>"; };
+		23E04736271997EB00B8AB7C /* Model v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model v3.xcdatamodel"; sourceTree = "<group>"; };
+		23E047372719984600B8AB7C /* FakeItineraryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeItineraryVM.swift; sourceTree = "<group>"; };
+		23E047392719A69E00B8AB7C /* Itinerary+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Itinerary+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23E0473A2719A69E00B8AB7C /* Itinerary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Itinerary+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23E0473B2719A69E00B8AB7C /* Map+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23E0473C2719A69E00B8AB7C /* Map+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23E04741271D5D1200B8AB7C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		23E04742271D715D00B8AB7C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		23E04764271D883000B8AB7C /* MapContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerViewController.swift; sourceTree = "<group>"; };
+		23E04765271D883000B8AB7C /* MapContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapContainerViewController.xib; sourceTree = "<group>"; };
+		23E04769271DA42600B8AB7C /* UIColor + hexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + hexString.swift"; sourceTree = "<group>"; };
+		23E0476B271DA6D800B8AB7C /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionsTests.swift; sourceTree = "<group>"; };
+		23E0476D271DACF200B8AB7C /* UIView + colorOfPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + colorOfPoint.swift"; sourceTree = "<group>"; };
+		23E0476F271DB47500B8AB7C /* UIViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionsTests.swift; sourceTree = "<group>"; };
+		23E04772271DC2E500B8AB7C /* MapContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainer.swift; sourceTree = "<group>"; };
+		23E04775271DC59E00B8AB7C /* MapVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVMProtocol.swift; sourceTree = "<group>"; };
+		23E04777271DC5A400B8AB7C /* MapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVM.swift; sourceTree = "<group>"; };
+		23E04779271DC61600B8AB7C /* MockMapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapVM.swift; sourceTree = "<group>"; };
+		23E0477B271EA9D300B8AB7C /* ItineraryViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewUITests.swift; sourceTree = "<group>"; };
+		23E0477D271EAC0500B8AB7C /* MapViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewUITests.swift; sourceTree = "<group>"; };
+		23E04781271EB17800B8AB7C /* AudioFeedbackObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeedbackObserver.swift; sourceTree = "<group>"; };
+		23E04785271EB19800B8AB7C /* FeedbackObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackObserver.swift; sourceTree = "<group>"; };
+		23E04787271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesViewModelTests.swift; sourceTree = "<group>"; };
+		23E0478A271EB46B00B8AB7C /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		23E0478C271EB47A00B8AB7C /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		23E0A6C2273A69D200BCE71B /* ItineraryNSItemProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryNSItemProviderTests.swift; sourceTree = "<group>"; };
+		23E0A6C4273A81FF00BCE71B /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		23E0A6C6273A930900BCE71B /* FeedbackCategoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCategoriesUITests.swift; sourceTree = "<group>"; };
+		23F548D627301BA600144DC2 /* FeedbacksVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksVMProtocol.swift; sourceTree = "<group>"; };
+		23F548D827301BAD00144DC2 /* FeedbacksVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksVM.swift; sourceTree = "<group>"; };
+		23F548DA27301BE200144DC2 /* FeedbackStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStateWrapper.swift; sourceTree = "<group>"; };
+		23F548DC27301D1500144DC2 /* FakeFeedbacksVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeFeedbacksVM.swift; sourceTree = "<group>"; };
+		23F548DE27301E4000144DC2 /* HapticFeedbackObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackObserver.swift; sourceTree = "<group>"; };
+		23F548E0273143E700144DC2 /* SpokenFeedbackObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenFeedbackObserver.swift; sourceTree = "<group>"; };
+		23F548E2273161F100144DC2 /* SoundFeedbackObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFeedbackObserver.swift; sourceTree = "<group>"; };
+		23F548E42731622A00144DC2 /* destination.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = destination.wav; sourceTree = "<group>"; };
+		23F548E62731898400144DC2 /* FeedbackOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackOptionsView.swift; sourceTree = "<group>"; };
+		23FE046C27732A220059D776 /* CategoriesStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesStateWrapper.swift; sourceTree = "<group>"; };
+		23FE0472277332880059D776 /* UIImage + color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + color.swift"; sourceTree = "<group>"; };
+		23FE0474277332E90059D776 /* UIColor + rgba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + rgba.swift"; sourceTree = "<group>"; };
+		23FE0476277332FC0059D776 /* UIColor + distanceSquared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + distanceSquared.swift"; sourceTree = "<group>"; };
+		23FE04782773330E0059D776 /* UIColor + distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + distance.swift"; sourceTree = "<group>"; };
+		23FE047A2773331D0059D776 /* UIColor + isSimilar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + isSimilar.swift"; sourceTree = "<group>"; };
+		23FE047C277353BE0059D776 /* ElementDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementDto.swift; sourceTree = "<group>"; };
+		23FE047E277353D10059D776 /* LocalizedTextDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedTextDto.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23225EE4270AEEEA00DFC12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23937CAF270DF5C500AC5FE1 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23225EF4270AEEEB00DFC12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23225EFE270AEEEB00DFC12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23225EDE270AEEEA00DFC12E = {
+			isa = PBXGroup;
+			children = (
+				23E04741271D5D1200B8AB7C /* README.md */,
+				23225EE9270AEEEA00DFC12E /* HapticMap */,
+				23225EFA270AEEEB00DFC12E /* HapticMapTests */,
+				23225F04270AEEEB00DFC12E /* HapticMapUITests */,
+				23225EE8270AEEEA00DFC12E /* Products */,
+				23937CAD270DF5C500AC5FE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23225EE8270AEEEA00DFC12E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23225EE7270AEEEA00DFC12E /* HapticMap.app */,
+				23225EF7270AEEEB00DFC12E /* HapticMapTests.xctest */,
+				23225F01270AEEEB00DFC12E /* HapticMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23225EE9270AEEEA00DFC12E /* HapticMap */ = {
+			isa = PBXGroup;
+			children = (
+				236034A627394A43000793D3 /* UTI Icons */,
+				23E04768271DA3EE00B8AB7C /* Extensions */,
+				23937CAC270DF5B500AC5FE1 /* HapticMapRelease.entitlements */,
+				23225F22270AF67100DFC12E /* HapticMap.entitlements */,
+				23BA189C270DE8D400A18F4A /* Info.plist */,
+				23BA1892270DCAA700A18F4A /* CoreData */,
+				23225F14270AF04B00DFC12E /* Views */,
+				23225F17270AF06200DFC12E /* ViewModels */,
+				23225F16270AF05700DFC12E /* Models */,
+				23225F15270AF05200DFC12E /* Fakes - Mocks - Stubs */,
+				23C76959278D8EEE001694DD /* Utils */,
+				23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */,
+				23225EEE270AEEEB00DFC12E /* Assets.xcassets */,
+				239F34D62733E5D600B517E4 /* intersection.wav */,
+				23F548E42731622A00144DC2 /* destination.wav */,
+				239F34DA2734075900B517E4 /* border.wav */,
+				239F34D8273406B100B517E4 /* car_crash_1.ahap */,
+				239F34D42733D78B00B517E4 /* concrete_3.ahap */,
+				23C7695C278DAEFF001694DD /* sounds_license.rtf */,
+				23225EF0270AEEEB00DFC12E /* Preview Content */,
+				23270F92270F1D7E00FBDC37 /* Localizable.strings */,
+			);
+			path = HapticMap;
+			sourceTree = "<group>";
+		};
+		23225EF0270AEEEB00DFC12E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23225EFA270AEEEB00DFC12E /* HapticMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				238B2B01271881E20030CA75 /* ItinerariesRepositoryTests.swift */,
+				23E04787271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift */,
+				238B2B062718875D0030CA75 /* ItineraryFetchTests.swift */,
+				2360349D27391960000793D3 /* NewItineraryViewModelTests.swift */,
+				2392B7E72726E7A00066189D /* NewMapViewModelTests.swift */,
+				239F34D22732B41E00B517E4 /* PreferenceRepositoryTests.swift */,
+				238B2B08271888A30030CA75 /* TestCoreDataStack.swift */,
+				23E0476B271DA6D800B8AB7C /* UIColorExtensionsTests.swift */,
+				23E0476F271DB47500B8AB7C /* UIViewExtensionsTests.swift */,
+				2392B7E12726B78A0066189D /* URLExtensionsTests.swift */,
+				236034AF273A5A78000793D3 /* MapNSItemProviderTests.swift */,
+				23E0A6C2273A69D200BCE71B /* ItineraryNSItemProviderTests.swift */,
+			);
+			path = HapticMapTests;
+			sourceTree = "<group>";
+		};
+		23225F04270AEEEB00DFC12E /* HapticMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23225F07270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift */,
+				23270F94270F342900FBDC37 /* ItinariesViewUITests.swift */,
+				23E0477B271EA9D300B8AB7C /* ItineraryViewUITests.swift */,
+				23E0477D271EAC0500B8AB7C /* MapViewUITests.swift */,
+				2392B7E32726CD8B0066189D /* NewMapViewUITests.swift */,
+				23E0A6C6273A930900BCE71B /* FeedbackCategoriesUITests.swift */,
+			);
+			path = HapticMapUITests;
+			sourceTree = "<group>";
+		};
+		23225F14270AF04B00DFC12E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23603493273910D4000793D3 /* DropDelegates */,
+				2392B7CD272169BC0066189D /* CustomModifiers */,
+				23E04771271DC2D800B8AB7C /* MapContainer */,
+				23E0A6C4273A81FF00BCE71B /* ActivityView.swift */,
+				23F548E62731898400144DC2 /* FeedbackOptionsView.swift */,
+				23514178272FE785007436AF /* FeedbacksView.swift */,
+				2392B7D0272186BE0066189D /* ImagePicker.swift */,
+				23225F18270AF09400DFC12E /* ItinerariesView.swift */,
+				23E0472F2719978E00B8AB7C /* ItineraryView.swift */,
+				23D9278B275F4AD8000018CB /* LocalizedTextsView.swift */,
+				23D9278D275F5E8E000018CB /* NewLocalizedTextView.swift */,
+				23D927752754FC1C000018CB /* MapInfoView.swift */,
+				23E04742271D715D00B8AB7C /* MapView.swift */,
+				2392B7D42721B1120066189D /* MessageView.swift */,
+				2351416B272BE806007436AF /* NewItineraryView.swift */,
+				239AA996271ECBCA001A4193 /* NewMapView.swift */,
+				2392B7E52726E09D0066189D /* SheetPresentationModeTesterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23225F15270AF05200DFC12E /* Fakes - Mocks - Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				2392B7EA2726E88E0066189D /* FakeRepository.swift */,
+			);
+			path = "Fakes - Mocks - Stubs";
+			sourceTree = "<group>";
+		};
+		23225F16270AF05700DFC12E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23E04789271EB46300B8AB7C /* Repository */,
+				23A7E5472742A76D004D3F9C /* ActivityItemWrapper.swift */,
+				23514176272FD0D2007436AF /* Category.swift */,
+				23FE046C27732A220059D776 /* CategoriesStateWrapper.swift */,
+				23FE047C277353BE0059D776 /* ElementDto.swift */,
+				238B2B0A27196EFF0030CA75 /* ErrorPacket.swift */,
+				2351417C272FF253007436AF /* Feedback.swift */,
+				23F548DA27301BE200144DC2 /* FeedbackStateWrapper.swift */,
+				23FE047E277353D10059D776 /* LocalizedTextDto.swift */,
+				2351417A272FF241007436AF /* PreferenceRepository.swift */,
+				236034A22739441D000793D3 /* ItineraryDto.swift */,
+				236034A427394434000793D3 /* MapDto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23225F17270AF06200DFC12E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				236034962739133B000793D3 /* FeedbackTypes */,
+				23F548D527301B9700144DC2 /* FeedbackSelection */,
+				23225F34270B280B00DFC12E /* Itineraries */,
+				23E047312719979400B8AB7C /* Itinerary */,
+				2350EFD6276A3BDE00E2B6A3 /* LocalizedTextsView */,
+				23E04774271DC58800B8AB7C /* Map */,
+				2350EFDD276B353600E2B6A3 /* MapInfo */,
+				2351416F272C2B5A007436AF /* New Itinerary */,
+				2350EFE4276B360300E2B6A3 /* NewLocalizedText */,
+				239AA98E271ECB71001A4193 /* New Map */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		23225F34270B280B00DFC12E /* Itineraries */ = {
+			isa = PBXGroup;
+			children = (
+				23225F1A270AF0E400DFC12E /* ItinariesVMProtocol.swift */,
+				23225F1C270AF17F00DFC12E /* ItinariesVM.swift */,
+				23225F20270AF23F00DFC12E /* FakeItinerariesVM.swift */,
+			);
+			path = Itineraries;
+			sourceTree = "<group>";
+		};
+		2350EFD6276A3BDE00E2B6A3 /* LocalizedTextsView */ = {
+			isa = PBXGroup;
+			children = (
+				2350EFDB276A3C2A00E2B6A3 /* LocalizedTextsVMProtocol.swift */,
+				2350EFD9276A3C0B00E2B6A3 /* LocalizedTextsVM.swift */,
+				2350EFD7276A3BF300E2B6A3 /* FakeLocalizedTextsVM.swift */,
+			);
+			path = LocalizedTextsView;
+			sourceTree = "<group>";
+		};
+		2350EFDD276B353600E2B6A3 /* MapInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2350EFDE276B354200E2B6A3 /* MapInfoVMProtocol.swift */,
+				2350EFE0276B354800E2B6A3 /* MapInfoVM.swift */,
+				2350EFE2276B354F00E2B6A3 /* FakeMapInfoVM.swift */,
+			);
+			path = MapInfo;
+			sourceTree = "<group>";
+		};
+		2350EFE4276B360300E2B6A3 /* NewLocalizedText */ = {
+			isa = PBXGroup;
+			children = (
+				2350EFE5276B360F00E2B6A3 /* NewLocalizedTextVMProtocol.swift */,
+				2350EFE7276B362300E2B6A3 /* NewLocalizedTextVM.swift */,
+				2350EFE9276B363300E2B6A3 /* FakeNewLocalizedTextVM.swift */,
+			);
+			path = NewLocalizedText;
+			sourceTree = "<group>";
+		};
+		2351416F272C2B5A007436AF /* New Itinerary */ = {
+			isa = PBXGroup;
+			children = (
+				23514172272C2B9E007436AF /* NewItineraryVMProtocol.swift */,
+				2351416D272C2B55007436AF /* NewItineraryVM.swift */,
+				23514170272C2B90007436AF /* NewItineraryVMError.swift */,
+				23514174272C2BAE007436AF /* FakeNewItineraryVM.swift */,
+			);
+			path = "New Itinerary";
+			sourceTree = "<group>";
+		};
+		23603493273910D4000793D3 /* DropDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				23603494273910DD000793D3 /* MapDropDelegate.swift */,
+			);
+			path = DropDelegates;
+			sourceTree = "<group>";
+		};
+		236034962739133B000793D3 /* FeedbackTypes */ = {
+			isa = PBXGroup;
+			children = (
+				236034972739134C000793D3 /* FeedbackOptionsVMProtocol.swift */,
+				2360349927391366000793D3 /* FeedbackOptionsVM.swift */,
+				2360349B273913F6000793D3 /* FakeFeedbackOptionsVM.swift */,
+			);
+			path = FeedbackTypes;
+			sourceTree = "<group>";
+		};
+		236034A627394A43000793D3 /* UTI Icons */ = {
+			isa = PBXGroup;
+			children = (
+				236034A827394A60000793D3 /* document_icon_22.png */,
+				236034AA27394A60000793D3 /* document_icon_44.png */,
+				236034A727394A60000793D3 /* document_icon_64.png */,
+				236034A927394A60000793D3 /* document_icon_320.png */,
+			);
+			path = "UTI Icons";
+			sourceTree = "<group>";
+		};
+		2392B7CD272169BC0066189D /* CustomModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2392B7CE272169DC0066189D /* CustomTextField.swift */,
+				2360349127390A12000793D3 /* VerticalLabelStyle.swift */,
+			);
+			path = CustomModifiers;
+			sourceTree = "<group>";
+		};
+		23937CAD270DF5C500AC5FE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23937CAE270DF5C500AC5FE1 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		239AA98E271ECB71001A4193 /* New Map */ = {
+			isa = PBXGroup;
+			children = (
+				239AA991271ECB8D001A4193 /* NewMapVMProtocol.swift */,
+				239AA98F271ECB85001A4193 /* NewMapVM.swift */,
+				2392B7DB2726AB260066189D /* NewMapVMError.swift */,
+				2392B7DD2726B3570066189D /* FakeNewMapVM.swift */,
+			);
+			path = "New Map";
+			sourceTree = "<group>";
+		};
+		23BA1892270DCAA700A18F4A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				23D92783275E029C000018CB /* Element+CoreDataClass.swift */,
+				23D92784275E029C000018CB /* Element+CoreDataProperties.swift */,
+				23E047392719A69E00B8AB7C /* Itinerary+CoreDataClass.swift */,
+				23E0473A2719A69E00B8AB7C /* Itinerary+CoreDataProperties.swift */,
+				23D927732747F94E000018CB /* Itinerary+NSItemProvider.swift */,
+				23D92785275E029C000018CB /* LocalizedText+CoreDataClass.swift */,
+				23D92786275E029C000018CB /* LocalizedText+CoreDataProperties.swift */,
+				23E0473B2719A69E00B8AB7C /* Map+CoreDataClass.swift */,
+				23E0473C2719A69E00B8AB7C /* Map+CoreDataProperties.swift */,
+				23D927712747F91A000018CB /* Map+NSItemProvider.swift */,
+				23BA1898270DCBFD00A18F4A /* PersistenceController.swift */,
+				23BA1895270DCAFD00A18F4A /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		23C76959278D8EEE001694DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				23C7695A278D8EFD001694DD /* ToneOutputUnit.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		23E047312719979400B8AB7C /* Itinerary */ = {
+			isa = PBXGroup;
+			children = (
+				23E04732271997A800B8AB7C /* ItineraryVMProtocol.swift */,
+				23E04734271997AD00B8AB7C /* ItineraryVM.swift */,
+				23E047372719984600B8AB7C /* FakeItineraryVM.swift */,
+			);
+			path = Itinerary;
+			sourceTree = "<group>";
+		};
+		23E04768271DA3EE00B8AB7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23E04769271DA42600B8AB7C /* UIColor + hexString.swift */,
+				23FE0474277332E90059D776 /* UIColor + rgba.swift */,
+				23FE0476277332FC0059D776 /* UIColor + distanceSquared.swift */,
+				23FE04782773330E0059D776 /* UIColor + distance.swift */,
+				23FE047A2773331D0059D776 /* UIColor + isSimilar.swift */,
+				23E0476D271DACF200B8AB7C /* UIView + colorOfPoint.swift */,
+				2392B7DF2726B7120066189D /* URL + humanReadableName.swift */,
+				2351417E273010E6007436AF /* UserDefaults + makeClearedInstance.swift */,
+				23D92779275504D5000018CB /* UIImage + colors.swift */,
+				23FE0472277332880059D776 /* UIImage + color.swift */,
+				2361B1B62785E35800903D39 /* CHHapticPattern + patterns.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23E04771271DC2D800B8AB7C /* MapContainer */ = {
+			isa = PBXGroup;
+			children = (
+				23E04764271D883000B8AB7C /* MapContainerViewController.swift */,
+				23E04765271D883000B8AB7C /* MapContainerViewController.xib */,
+				23E04772271DC2E500B8AB7C /* MapContainer.swift */,
+			);
+			path = MapContainer;
+			sourceTree = "<group>";
+		};
+		23E04774271DC58800B8AB7C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				23E04780271EB15900B8AB7C /* FeedbackObservers */,
+				23E04775271DC59E00B8AB7C /* MapVMProtocol.swift */,
+				23E04777271DC5A400B8AB7C /* MapVM.swift */,
+				23E04779271DC61600B8AB7C /* MockMapVM.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		23E04780271EB15900B8AB7C /* FeedbackObservers */ = {
+			isa = PBXGroup;
+			children = (
+				23E04785271EB19800B8AB7C /* FeedbackObserver.swift */,
+				23E04781271EB17800B8AB7C /* AudioFeedbackObserver.swift */,
+				23F548DE27301E4000144DC2 /* HapticFeedbackObserver.swift */,
+				23F548E0273143E700144DC2 /* SpokenFeedbackObserver.swift */,
+				23F548E2273161F100144DC2 /* SoundFeedbackObserver.swift */,
+			);
+			path = FeedbackObservers;
+			sourceTree = "<group>";
+		};
+		23E04789271EB46300B8AB7C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				238B2AF72718259C0030CA75 /* Repository.swift */,
+				23E0478A271EB46B00B8AB7C /* RepositoryProtocol.swift */,
+				23E0478C271EB47A00B8AB7C /* RepositoryError.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		23F548D527301B9700144DC2 /* FeedbackSelection */ = {
+			isa = PBXGroup;
+			children = (
+				23F548D627301BA600144DC2 /* FeedbacksVMProtocol.swift */,
+				23F548D827301BAD00144DC2 /* FeedbacksVM.swift */,
+				23F548DC27301D1500144DC2 /* FakeFeedbacksVM.swift */,
+			);
+			path = FeedbackSelection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23225EE6270AEEEA00DFC12E /* HapticMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23225F0B270AEEEB00DFC12E /* Build configuration list for PBXNativeTarget "HapticMap" */;
+			buildPhases = (
+				23225EE3270AEEEA00DFC12E /* Sources */,
+				23225EE4270AEEEA00DFC12E /* Frameworks */,
+				23225EE5270AEEEA00DFC12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HapticMap;
+			packageProductDependencies = (
+			);
+			productName = HapticMap;
+			productReference = 23225EE7270AEEEA00DFC12E /* HapticMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23225EF6270AEEEB00DFC12E /* HapticMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23225F0E270AEEEB00DFC12E /* Build configuration list for PBXNativeTarget "HapticMapTests" */;
+			buildPhases = (
+				23225EF3270AEEEB00DFC12E /* Sources */,
+				23225EF4270AEEEB00DFC12E /* Frameworks */,
+				23225EF5270AEEEB00DFC12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23225EF9270AEEEB00DFC12E /* PBXTargetDependency */,
+			);
+			name = HapticMapTests;
+			productName = HapticMapTests;
+			productReference = 23225EF7270AEEEB00DFC12E /* HapticMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23225F00270AEEEB00DFC12E /* HapticMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23225F11270AEEEB00DFC12E /* Build configuration list for PBXNativeTarget "HapticMapUITests" */;
+			buildPhases = (
+				23225EFD270AEEEB00DFC12E /* Sources */,
+				23225EFE270AEEEB00DFC12E /* Frameworks */,
+				23225EFF270AEEEB00DFC12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23225F03270AEEEB00DFC12E /* PBXTargetDependency */,
+			);
+			name = HapticMapUITests;
+			productName = HapticMapUITests;
+			productReference = 23225F01270AEEEB00DFC12E /* HapticMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23225EDF270AEEEA00DFC12E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					23225EE6270AEEEA00DFC12E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					23225EF6270AEEEB00DFC12E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 23225EE6270AEEEA00DFC12E;
+					};
+					23225F00270AEEEB00DFC12E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 23225EE6270AEEEA00DFC12E;
+					};
+				};
+			};
+			buildConfigurationList = 23225EE2270AEEEA00DFC12E /* Build configuration list for PBXProject "HapticMap" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 23225EDE270AEEEA00DFC12E;
+			packageReferences = (
+			);
+			productRefGroup = 23225EE8270AEEEA00DFC12E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23225EE6270AEEEA00DFC12E /* HapticMap */,
+				23225EF6270AEEEB00DFC12E /* HapticMapTests */,
+				23225F00270AEEEB00DFC12E /* HapticMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23225EE5270AEEEA00DFC12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239F34D9273406B100B517E4 /* car_crash_1.ahap in Resources */,
+				23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */,
+				23270F90270F1D7E00FBDC37 /* Localizable.strings in Resources */,
+				236034AC27394A60000793D3 /* document_icon_22.png in Resources */,
+				236034AB27394A60000793D3 /* document_icon_64.png in Resources */,
+				23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */,
+				239F34D72733E5D600B517E4 /* intersection.wav in Resources */,
+				239F34D52733D78B00B517E4 /* concrete_3.ahap in Resources */,
+				239F34DB2734075900B517E4 /* border.wav in Resources */,
+				23F548E52731622A00144DC2 /* destination.wav in Resources */,
+				23E04767271D883000B8AB7C /* MapContainerViewController.xib in Resources */,
+				236034AD27394A60000793D3 /* document_icon_320.png in Resources */,
+				23C7695D278DAEFF001694DD /* sounds_license.rtf in Resources */,
+				236034AE27394A60000793D3 /* document_icon_44.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23225EF5270AEEEB00DFC12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23225EFF270AEEEB00DFC12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23225EE3270AEEEA00DFC12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236034A527394434000793D3 /* MapDto.swift in Sources */,
+				2351417F273010E6007436AF /* UserDefaults + makeClearedInstance.swift in Sources */,
+				23E0478D271EB47A00B8AB7C /* RepositoryError.swift in Sources */,
+				23D92788275E029C000018CB /* Element+CoreDataProperties.swift in Sources */,
+				239AA990271ECB85001A4193 /* NewMapVM.swift in Sources */,
+				23E0476A271DA42600B8AB7C /* UIColor + hexString.swift in Sources */,
+				23E04776271DC59E00B8AB7C /* MapVMProtocol.swift in Sources */,
+				23FE046D27732A220059D776 /* CategoriesStateWrapper.swift in Sources */,
+				23E04766271D883000B8AB7C /* MapContainerViewController.swift in Sources */,
+				23D927722747F91A000018CB /* Map+NSItemProvider.swift in Sources */,
+				2392B7DC2726AB260066189D /* NewMapVMError.swift in Sources */,
+				23514173272C2B9E007436AF /* NewItineraryVMProtocol.swift in Sources */,
+				23F548E1273143E700144DC2 /* SpokenFeedbackObserver.swift in Sources */,
+				23E0478B271EB46B00B8AB7C /* RepositoryProtocol.swift in Sources */,
+				23E0A6C5273A81FF00BCE71B /* ActivityView.swift in Sources */,
+				23603495273910DD000793D3 /* MapDropDelegate.swift in Sources */,
+				236034A32739441D000793D3 /* ItineraryDto.swift in Sources */,
+				2361B1B72785E35800903D39 /* CHHapticPattern + patterns.swift in Sources */,
+				23E047302719978E00B8AB7C /* ItineraryView.swift in Sources */,
+				23D9278A275E029C000018CB /* LocalizedText+CoreDataProperties.swift in Sources */,
+				23BA1899270DCBFD00A18F4A /* PersistenceController.swift in Sources */,
+				2360349A27391366000793D3 /* FeedbackOptionsVM.swift in Sources */,
+				2392B7CF272169DC0066189D /* CustomTextField.swift in Sources */,
+				23FE04792773330E0059D776 /* UIColor + distance.swift in Sources */,
+				2392B7EB2726E88E0066189D /* FakeRepository.swift in Sources */,
+				2350EFD8276A3BF300E2B6A3 /* FakeLocalizedTextsVM.swift in Sources */,
+				23A7E5482742A76D004D3F9C /* ActivityItemWrapper.swift in Sources */,
+				2351417D272FF253007436AF /* Feedback.swift in Sources */,
+				2392B7E62726E09D0066189D /* SheetPresentationModeTesterView.swift in Sources */,
+				23514171272C2B90007436AF /* NewItineraryVMError.swift in Sources */,
+				23D92787275E029C000018CB /* Element+CoreDataClass.swift in Sources */,
+				23E04773271DC2E500B8AB7C /* MapContainer.swift in Sources */,
+				2350EFDC276A3C2A00E2B6A3 /* LocalizedTextsVMProtocol.swift in Sources */,
+				23225F21270AF23F00DFC12E /* FakeItinerariesVM.swift in Sources */,
+				2350EFE3276B354F00E2B6A3 /* FakeMapInfoVM.swift in Sources */,
+				23D92789275E029C000018CB /* LocalizedText+CoreDataClass.swift in Sources */,
+				2350EFEA276B363300E2B6A3 /* FakeNewLocalizedTextVM.swift in Sources */,
+				23F548DB27301BE200144DC2 /* FeedbackStateWrapper.swift in Sources */,
+				23E047382719984600B8AB7C /* FakeItineraryVM.swift in Sources */,
+				23514177272FD0D2007436AF /* Category.swift in Sources */,
+				2350EFE8276B362300E2B6A3 /* NewLocalizedTextVM.swift in Sources */,
+				2392B7D52721B1120066189D /* MessageView.swift in Sources */,
+				23E0473D2719A69E00B8AB7C /* Itinerary+CoreDataClass.swift in Sources */,
+				23225F19270AF09400DFC12E /* ItinerariesView.swift in Sources */,
+				23E04786271EB19800B8AB7C /* FeedbackObserver.swift in Sources */,
+				23D9278C275F4AD8000018CB /* LocalizedTextsView.swift in Sources */,
+				23F548D927301BAD00144DC2 /* FeedbacksVM.swift in Sources */,
+				23E04733271997A800B8AB7C /* ItineraryVMProtocol.swift in Sources */,
+				2392B7D1272186BE0066189D /* ImagePicker.swift in Sources */,
+				23F548DF27301E4000144DC2 /* HapticFeedbackObserver.swift in Sources */,
+				23E0476E271DACF200B8AB7C /* UIView + colorOfPoint.swift in Sources */,
+				23FE047F277353D10059D776 /* LocalizedTextDto.swift in Sources */,
+				23FE0473277332880059D776 /* UIImage + color.swift in Sources */,
+				23E04743271D715D00B8AB7C /* MapView.swift in Sources */,
+				23C7695B278D8EFD001694DD /* ToneOutputUnit.swift in Sources */,
+				23225F1D270AF17F00DFC12E /* ItinariesVM.swift in Sources */,
+				2392B7E02726B7120066189D /* URL + humanReadableName.swift in Sources */,
+				23F548DD27301D1500144DC2 /* FakeFeedbacksVM.swift in Sources */,
+				23514179272FE785007436AF /* FeedbacksView.swift in Sources */,
+				2350EFDA276A3C0B00E2B6A3 /* LocalizedTextsVM.swift in Sources */,
+				23F548E72731898400144DC2 /* FeedbackOptionsView.swift in Sources */,
+				23514175272C2BAE007436AF /* FakeNewItineraryVM.swift in Sources */,
+				23FE047B2773331D0059D776 /* UIColor + isSimilar.swift in Sources */,
+				238B2B0B27196EFF0030CA75 /* ErrorPacket.swift in Sources */,
+				2351416C272BE806007436AF /* NewItineraryView.swift in Sources */,
+				2350EFE1276B354800E2B6A3 /* MapInfoVM.swift in Sources */,
+				239AA997271ECBCA001A4193 /* NewMapView.swift in Sources */,
+				23F548D727301BA600144DC2 /* FeedbacksVMProtocol.swift in Sources */,
+				238B2AF82718259C0030CA75 /* Repository.swift in Sources */,
+				2350EFE6276B360F00E2B6A3 /* NewLocalizedTextVMProtocol.swift in Sources */,
+				23225F1B270AF0E400DFC12E /* ItinariesVMProtocol.swift in Sources */,
+				23E04782271EB17800B8AB7C /* AudioFeedbackObserver.swift in Sources */,
+				2360349C273913F6000793D3 /* FakeFeedbackOptionsVM.swift in Sources */,
+				23FE0477277332FC0059D776 /* UIColor + distanceSquared.swift in Sources */,
+				23D927742747F94E000018CB /* Itinerary+NSItemProvider.swift in Sources */,
+				23FE0475277332E90059D776 /* UIColor + rgba.swift in Sources */,
+				236034982739134C000793D3 /* FeedbackOptionsVMProtocol.swift in Sources */,
+				23E0473E2719A69E00B8AB7C /* Itinerary+CoreDataProperties.swift in Sources */,
+				2350EFDF276B354200E2B6A3 /* MapInfoVMProtocol.swift in Sources */,
+				2392B7DE2726B3570066189D /* FakeNewMapVM.swift in Sources */,
+				23BA1897270DCAFD00A18F4A /* Model.xcdatamodeld in Sources */,
+				23E047402719A69E00B8AB7C /* Map+CoreDataProperties.swift in Sources */,
+				23E0473F2719A69E00B8AB7C /* Map+CoreDataClass.swift in Sources */,
+				23E04735271997AD00B8AB7C /* ItineraryVM.swift in Sources */,
+				23FE047D277353BE0059D776 /* ElementDto.swift in Sources */,
+				23225EEB270AEEEA00DFC12E /* HapticMapApp.swift in Sources */,
+				23E0477A271DC61600B8AB7C /* MockMapVM.swift in Sources */,
+				239AA992271ECB8D001A4193 /* NewMapVMProtocol.swift in Sources */,
+				2351416E272C2B55007436AF /* NewItineraryVM.swift in Sources */,
+				23F548E3273161F100144DC2 /* SoundFeedbackObserver.swift in Sources */,
+				2351417B272FF241007436AF /* PreferenceRepository.swift in Sources */,
+				2360349227390A12000793D3 /* VerticalLabelStyle.swift in Sources */,
+				23E04778271DC5A400B8AB7C /* MapVM.swift in Sources */,
+				23D9278E275F5E8E000018CB /* NewLocalizedTextView.swift in Sources */,
+				23D9277A275504D5000018CB /* UIImage + colors.swift in Sources */,
+				23D927762754FC1C000018CB /* MapInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23225EF3270AEEEB00DFC12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E04788271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift in Sources */,
+				2392B7E22726B78A0066189D /* URLExtensionsTests.swift in Sources */,
+				238B2B02271881E20030CA75 /* ItinerariesRepositoryTests.swift in Sources */,
+				23E04770271DB47500B8AB7C /* UIViewExtensionsTests.swift in Sources */,
+				23E0476C271DA6D800B8AB7C /* UIColorExtensionsTests.swift in Sources */,
+				238B2B072718875D0030CA75 /* ItineraryFetchTests.swift in Sources */,
+				23E0A6C3273A69D200BCE71B /* ItineraryNSItemProviderTests.swift in Sources */,
+				238B2B09271888A30030CA75 /* TestCoreDataStack.swift in Sources */,
+				239F34D32732B41E00B517E4 /* PreferenceRepositoryTests.swift in Sources */,
+				2392B7E82726E7A00066189D /* NewMapViewModelTests.swift in Sources */,
+				2360349E27391960000793D3 /* NewItineraryViewModelTests.swift in Sources */,
+				236034B0273A5A78000793D3 /* MapNSItemProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23225EFD270AEEEB00DFC12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23225F08270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift in Sources */,
+				23E0A6C7273A930900BCE71B /* FeedbackCategoriesUITests.swift in Sources */,
+				23E0477E271EAC0500B8AB7C /* MapViewUITests.swift in Sources */,
+				2392B7E42726CD8B0066189D /* NewMapViewUITests.swift in Sources */,
+				23E0477C271EA9D300B8AB7C /* ItineraryViewUITests.swift in Sources */,
+				23E0A6C8273A9EC300BCE71B /* Feedback.swift in Sources */,
+				23270F95270F342900FBDC37 /* ItinariesViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23225EF9270AEEEB00DFC12E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23225EE6270AEEEA00DFC12E /* HapticMap */;
+			targetProxy = 23225EF8270AEEEB00DFC12E /* PBXContainerItemProxy */;
+		};
+		23225F03270AEEEB00DFC12E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23225EE6270AEEEA00DFC12E /* HapticMap */;
+			targetProxy = 23225F02270AEEEB00DFC12E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23270F92270F1D7E00FBDC37 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23270F91270F1D7E00FBDC37 /* en */,
+				23270F93270F1D8400FBDC37 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23225F09270AEEEB00DFC12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23225F0A270AEEEB00DFC12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23225F0C270AEEEB00DFC12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HapticMap/HapticMap.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HapticMap/Preview Content\"";
+				DEVELOPMENT_TEAM = QDPXXP7DPZ;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HapticMap/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.elca.hapticmap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23225F0D270AEEEB00DFC12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HapticMap/HapticMapRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HapticMap/Preview Content\"";
+				DEVELOPMENT_TEAM = QDPXXP7DPZ;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HapticMap/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.elca.hapticmap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "HapticMap AppCenter Distribution";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23225F0F270AEEEB00DFC12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZF243P8CX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arblindassistance.HapticMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HapticMap.app/HapticMap";
+			};
+			name = Debug;
+		};
+		23225F10270AEEEB00DFC12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZF243P8CX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arblindassistance.HapticMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HapticMap.app/HapticMap";
+			};
+			name = Release;
+		};
+		23225F12270AEEEB00DFC12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZF243P8CX;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arblindassistance.HapticMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HapticMap;
+			};
+			name = Debug;
+		};
+		23225F13270AEEEB00DFC12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZF243P8CX;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arblindassistance.HapticMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HapticMap;
+			};
+			name = Release;
+		};
+		23270F96270F43E100FBDC37 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TESTING";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Testing;
+		};
+		23270F97270F43E100FBDC37 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HapticMap/HapticMap.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"HapticMap/Preview Content\"";
+				DEVELOPMENT_TEAM = QDPXXP7DPZ;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HapticMap/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.elca.hapticmap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Testing;
+		};
+		23270F98270F43E100FBDC37 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZF243P8CX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arblindassistance.HapticMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HapticMap.app/HapticMap";
+			};
+			name = Testing;
+		};
+		23270F99270F43E100FBDC37 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZF243P8CX;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arblindassistance.HapticMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HapticMap;
+			};
+			name = Testing;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23225EE2270AEEEA00DFC12E /* Build configuration list for PBXProject "HapticMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23225F09270AEEEB00DFC12E /* Debug */,
+				23270F96270F43E100FBDC37 /* Testing */,
+				23225F0A270AEEEB00DFC12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23225F0B270AEEEB00DFC12E /* Build configuration list for PBXNativeTarget "HapticMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23225F0C270AEEEB00DFC12E /* Debug */,
+				23270F97270F43E100FBDC37 /* Testing */,
+				23225F0D270AEEEB00DFC12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23225F0E270AEEEB00DFC12E /* Build configuration list for PBXNativeTarget "HapticMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23225F0F270AEEEB00DFC12E /* Debug */,
+				23270F98270F43E100FBDC37 /* Testing */,
+				23225F10270AEEEB00DFC12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23225F11270AEEEB00DFC12E /* Build configuration list for PBXNativeTarget "HapticMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23225F12270AEEEB00DFC12E /* Debug */,
+				23270F99270F43E100FBDC37 /* Testing */,
+				23225F13270AEEEB00DFC12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23BA1895270DCAFD00A18F4A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23D9276E2747DFDB000018CB /* Model v6.xcdatamodel */,
+				23727C37272714F3002E10F3 /* Model v5.xcdatamodel */,
+				2392B7D82722ACCC0066189D /* Model v4.xcdatamodel */,
+				23E04736271997EB00B8AB7C /* Model v3.xcdatamodel */,
+				238B2B0C271974B70030CA75 /* Model v2.xcdatamodel */,
+				23BA1896270DCAFD00A18F4A /* Model.xcdatamodel */,
+			);
+			currentVersion = 23D9276E2747DFDB000018CB /* Model v6.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 23225EDF270AEEEA00DFC12E /* Project object */;
+}
