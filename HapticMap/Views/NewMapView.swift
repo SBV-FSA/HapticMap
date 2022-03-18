@@ -17,7 +17,6 @@ struct NewMapView<VM: NewMapVMProtocol>: View {
     
     private func save() {
         vm.save { error in
-            print("finished saving")
             switch error {
             case .success(_):
                 dismiss()
@@ -25,7 +24,6 @@ struct NewMapView<VM: NewMapVMProtocol>: View {
                 vm.errorPacket = ErrorPacket(error: error)
             }
         }
-        print("done")
     }
     
     var body: some View {

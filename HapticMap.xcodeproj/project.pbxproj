@@ -327,6 +327,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154F57BE27E4C93000F7D219 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				236034A627394A43000793D3 /* UTI Icons */,
+				23225EEE270AEEEB00DFC12E /* Assets.xcassets */,
+				154F57C027E4C94400F7D219 /* Vibrations */,
+				154F57BF27E4C93C00F7D219 /* Sounds */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		154F57BF27E4C93C00F7D219 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				23C7695C278DAEFF001694DD /* sounds_license.rtf */,
+				239F34D62733E5D600B517E4 /* intersection.wav */,
+				23F548E42731622A00144DC2 /* destination.wav */,
+				239F34DA2734075900B517E4 /* border.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		154F57C027E4C94400F7D219 /* Vibrations */ = {
+			isa = PBXGroup;
+			children = (
+				239F34D8273406B100B517E4 /* car_crash_1.ahap */,
+				239F34D42733D78B00B517E4 /* concrete_3.ahap */,
+			);
+			path = Vibrations;
+			sourceTree = "<group>";
+		};
 		23225EDE270AEEEA00DFC12E = {
 			isa = PBXGroup;
 			children = (
@@ -352,27 +383,20 @@
 		23225EE9270AEEEA00DFC12E /* HapticMap */ = {
 			isa = PBXGroup;
 			children = (
-				236034A627394A43000793D3 /* UTI Icons */,
+				23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */,
+				154F57BE27E4C93000F7D219 /* Assets */,
+				23BA1892270DCAA700A18F4A /* CoreData */,
 				23E04768271DA3EE00B8AB7C /* Extensions */,
+				23225F15270AF05200DFC12E /* Fakes - Mocks - Stubs */,
+				23225F16270AF05700DFC12E /* Models */,
+				23225EF0270AEEEB00DFC12E /* Preview Content */,
+				23C76959278D8EEE001694DD /* Utils */,
+				23225F14270AF04B00DFC12E /* Views */,
+				23225F17270AF06200DFC12E /* ViewModels */,
+				23270F92270F1D7E00FBDC37 /* Localizable.strings */,
 				23937CAC270DF5B500AC5FE1 /* HapticMapRelease.entitlements */,
 				23225F22270AF67100DFC12E /* HapticMap.entitlements */,
 				23BA189C270DE8D400A18F4A /* Info.plist */,
-				23BA1892270DCAA700A18F4A /* CoreData */,
-				23225F14270AF04B00DFC12E /* Views */,
-				23225F17270AF06200DFC12E /* ViewModels */,
-				23225F16270AF05700DFC12E /* Models */,
-				23225F15270AF05200DFC12E /* Fakes - Mocks - Stubs */,
-				23C76959278D8EEE001694DD /* Utils */,
-				23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */,
-				23225EEE270AEEEB00DFC12E /* Assets.xcassets */,
-				239F34D62733E5D600B517E4 /* intersection.wav */,
-				23F548E42731622A00144DC2 /* destination.wav */,
-				239F34DA2734075900B517E4 /* border.wav */,
-				239F34D8273406B100B517E4 /* car_crash_1.ahap */,
-				239F34D42733D78B00B517E4 /* concrete_3.ahap */,
-				23C7695C278DAEFF001694DD /* sounds_license.rtf */,
-				23225EF0270AEEEB00DFC12E /* Preview Content */,
-				23270F92270F1D7E00FBDC37 /* Localizable.strings */,
 			);
 			path = HapticMap;
 			sourceTree = "<group>";
@@ -1137,12 +1161,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"HapticMap/Preview Content\"";
-				DEVELOPMENT_TEAM = QDPXXP7DPZ;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HapticMap/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1155,7 +1180,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ch.elca.hapticmap;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sbv-fsa.HapticMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -1172,16 +1197,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HapticMap/HapticMapRelease.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"HapticMap/Preview Content\"";
-				DEVELOPMENT_TEAM = QDPXXP7DPZ;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HapticMap/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1194,9 +1220,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ch.elca.hapticmap;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sbv-fsa.HapticMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "HapticMap AppCenter Distribution";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1374,12 +1400,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"HapticMap/Preview Content\"";
-				DEVELOPMENT_TEAM = QDPXXP7DPZ;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HapticMap/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1392,7 +1419,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ch.elca.hapticmap;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.sbv-fsa.HapticMap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
