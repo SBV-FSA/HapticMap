@@ -20,7 +20,15 @@ class BootManager {
             PreferenceRepository.shared.resetToDefault()
         }
         
-        // 2. Set the last version used as the current one in User Defaults
+        // 2. If the app was never launched before, seed an example itinerary
+        if UserDefaults.standard.lastVersionUsed == nil  {
+            if let path = Bundle.main.path(forResource: "example", ofType: "hcit") {
+                let fileUrl = URL(fileURLWithPath: path)
+                ImportManager.importItinerary(from: fileUrl, persistenceController: .shared)
+            }
+        }
+        
+        // 3. Set the last version used as the current one in User Defaults
         setLastVersionUsed()
         
     }

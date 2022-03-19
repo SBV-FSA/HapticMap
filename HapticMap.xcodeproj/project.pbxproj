@@ -10,6 +10,7 @@
 		159C01AF27E6152900C19374 /* UserDefaults + variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01AE27E6152900C19374 /* UserDefaults + variables.swift */; };
 		159C01B127E616C500C19374 /* BootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01B027E616C500C19374 /* BootManager.swift */; };
 		159C01B327E6179200C19374 /* ImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01B227E6179200C19374 /* ImportManager.swift */; };
+		159C01B527E644C600C19374 /* example.hcit in Resources */ = {isa = PBXBuildFile; fileRef = 159C01B427E644C600C19374 /* example.hcit */; };
 		23225EEB270AEEEA00DFC12E /* HapticMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */; };
 		23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EEE270AEEEB00DFC12E /* Assets.xcassets */; };
 		23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */; };
@@ -163,6 +164,7 @@
 		159C01AE27E6152900C19374 /* UserDefaults + variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + variables.swift"; sourceTree = "<group>"; };
 		159C01B027E616C500C19374 /* BootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootManager.swift; sourceTree = "<group>"; };
 		159C01B227E6179200C19374 /* ImportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportManager.swift; sourceTree = "<group>"; };
+		159C01B427E644C600C19374 /* example.hcit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.hcit; sourceTree = "<group>"; };
 		23225EE7270AEEEA00DFC12E /* HapticMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticMapApp.swift; sourceTree = "<group>"; };
 		23225EEE270AEEEB00DFC12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 		154F57BE27E4C93000F7D219 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				159C01B427E644C600C19374 /* example.hcit */,
 				236034A627394A43000793D3 /* UTI Icons */,
 				23225EEE270AEEEB00DFC12E /* Assets.xcassets */,
 				154F57C027E4C94400F7D219 /* Vibrations */,
@@ -847,6 +850,7 @@
 				23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */,
 				23270F90270F1D7E00FBDC37 /* Localizable.strings in Resources */,
 				236034AC27394A60000793D3 /* document_icon_22.png in Resources */,
+				159C01B527E644C600C19374 /* example.hcit in Resources */,
 				236034AB27394A60000793D3 /* document_icon_64.png in Resources */,
 				23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */,
 				239F34D72733E5D600B517E4 /* intersection.wav in Resources */,
