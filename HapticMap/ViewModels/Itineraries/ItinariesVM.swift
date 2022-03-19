@@ -24,8 +24,8 @@ class ItinariesVM<Repository: RepositoryProtocol>: ItinariesVMProtocol {
     init(model: Repository) {
         
         self.repository = model
-        self.repository.allEntitiesPublisher.sink { test in
-            switch test {
+        self.repository.allEntitiesPublisher.sink { state in
+            switch state {
             case .finished:
                 return
             case .failure(let error):

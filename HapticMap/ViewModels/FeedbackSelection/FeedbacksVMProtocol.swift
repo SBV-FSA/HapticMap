@@ -18,4 +18,7 @@ protocol FeedbacksVMProtocol: ObservableObject {
     /// The feedbacks states.
     var states: [FeedbackStateWrapper] { get set }
     
+    /// Resets all the preferences to default values, suited for new users.
+    func resetToDefault()
+    
 }

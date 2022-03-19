@@ -20,6 +20,10 @@ class FeedbacksVM: FeedbacksVMProtocol {
         listenChanges()
     }
     
+    func resetToDefault() {
+        preferenceRepository.resetToDefault()
+    }
+    
     private var cancellable: Cancellable?
     private func listenChanges() {
         cancellable = preferenceRepository.feedbacksPublisher.sink(receiveValue: { (feedback, value) in

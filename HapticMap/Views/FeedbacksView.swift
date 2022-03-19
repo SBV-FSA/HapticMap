@@ -50,6 +50,11 @@ struct FeedbacksView<VM: FeedbacksVMProtocol>: View {
                 }
                 
             }
+            Section {
+                Button("reset_to_default", role: .destructive) {
+                    vm.resetToDefault()
+                }
+            }
         }
         .navigationTitle("settings")
     }
