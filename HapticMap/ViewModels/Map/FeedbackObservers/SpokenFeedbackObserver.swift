@@ -59,15 +59,20 @@ class SpokenFeedbackObserver: FeedbackObserver {
             readingString = NSLocalizedString(category.rawValue, comment: "Translation of the category")
         }
         if !categories.contains(category) { return }
-        if UIAccessibility.isVoiceOverRunning {
-            UIAccessibility.post(notification:.announcement, argument:readingString)
-        } else {
-            synthesizer.stopSpeaking(at: .immediate)
-            let utterance = AVSpeechUtterance(string: readingString)
-            utterance.voice = AVSpeechSynthesisVoice(language: Locale.current.languageCode)
-            utterance.rate = synthesizerRate
-            synthesizer.speak(utterance)
-        }
+        
+        /* A good practice would be to use `UIAccessibility.post(notification:.announcement, argument:"Hello World!")`. However, using this modifies the system vibrations behavior and creates confusion by acting as follows:
+        * 1. When moving the finger on an element on the map, the haptic feedback is correct.
+        * 2. Once the user touches an element, this SpokenFeedbackObserver sends a UIAccessibility announcement to describe the element using VoiceOver
+        * 3. After a few milliseconds, iOS turns the vibrations off
+        * 4. Once VoiceOver finished reading the text, iOS turns the vibrations back on using a fade transition
+        * 5. Moreover, if the user moves the finger on another element while speaking, no vibrations will be felt.
+        */
+        
+        synthesizer.stopSpeaking(at: .immediate)
+        let utterance = AVSpeechUtterance(string: readingString)
+        utterance.voice = AVSpeechSynthesisVoice(language: Locale.current.languageCode)
+        utterance.rate = synthesizerRate
+        synthesizer.speak(utterance)
     }
     
 }
