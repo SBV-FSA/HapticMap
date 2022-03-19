@@ -7,10 +7,12 @@
 
 import Foundation
 
+/// Responsible for background processes required at app launch.
 class BootManager {
     
     static var shared = BootManager()
     
+    /// Function design to be called when the app will launch. Sets the defaults preferences and saves the current app version as the last used by the user.
     func appWillLaunch() {
         
         // 1. If the app was never launched before, set the preferences to default
@@ -23,6 +25,7 @@ class BootManager {
         
     }
     
+    /// Saves the current app version in UserDefaults.
     private func setLastVersionUsed() {
         
         // Get the app version
