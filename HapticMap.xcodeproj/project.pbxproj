@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159C01AF27E6152900C19374 /* UserDefaults + variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01AE27E6152900C19374 /* UserDefaults + variables.swift */; };
+		159C01B127E616C500C19374 /* BootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01B027E616C500C19374 /* BootManager.swift */; };
+		159C01B327E6179200C19374 /* ImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01B227E6179200C19374 /* ImportManager.swift */; };
 		23225EEB270AEEEA00DFC12E /* HapticMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */; };
 		23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EEE270AEEEB00DFC12E /* Assets.xcassets */; };
 		23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */; };
@@ -157,6 +160,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159C01AE27E6152900C19374 /* UserDefaults + variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + variables.swift"; sourceTree = "<group>"; };
+		159C01B027E616C500C19374 /* BootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootManager.swift; sourceTree = "<group>"; };
+		159C01B227E6179200C19374 /* ImportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportManager.swift; sourceTree = "<group>"; };
 		23225EE7270AEEEA00DFC12E /* HapticMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticMapApp.swift; sourceTree = "<group>"; };
 		23225EEE270AEEEB00DFC12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -640,6 +646,8 @@
 			isa = PBXGroup;
 			children = (
 				23C7695A278D8EFD001694DD /* ToneOutputUnit.swift */,
+				159C01B027E616C500C19374 /* BootManager.swift */,
+				159C01B227E6179200C19374 /* ImportManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -665,6 +673,7 @@
 				23E0476D271DACF200B8AB7C /* UIView + colorOfPoint.swift */,
 				2392B7DF2726B7120066189D /* URL + humanReadableName.swift */,
 				2351417E273010E6007436AF /* UserDefaults + makeClearedInstance.swift */,
+				159C01AE27E6152900C19374 /* UserDefaults + variables.swift */,
 				23D92779275504D5000018CB /* UIImage + colors.swift */,
 				23FE0472277332880059D776 /* UIImage + color.swift */,
 				2361B1B62785E35800903D39 /* CHHapticPattern + patterns.swift */,
@@ -884,7 +893,9 @@
 				23D927722747F91A000018CB /* Map+NSItemProvider.swift in Sources */,
 				2392B7DC2726AB260066189D /* NewMapVMError.swift in Sources */,
 				23514173272C2B9E007436AF /* NewItineraryVMProtocol.swift in Sources */,
+				159C01B327E6179200C19374 /* ImportManager.swift in Sources */,
 				23F548E1273143E700144DC2 /* SpokenFeedbackObserver.swift in Sources */,
+				159C01AF27E6152900C19374 /* UserDefaults + variables.swift in Sources */,
 				23E0478B271EB46B00B8AB7C /* RepositoryProtocol.swift in Sources */,
 				23E0A6C5273A81FF00BCE71B /* ActivityView.swift in Sources */,
 				23603495273910DD000793D3 /* MapDropDelegate.swift in Sources */,
@@ -952,6 +963,7 @@
 				23E0473E2719A69E00B8AB7C /* Itinerary+CoreDataProperties.swift in Sources */,
 				2350EFDF276B354200E2B6A3 /* MapInfoVMProtocol.swift in Sources */,
 				2392B7DE2726B3570066189D /* FakeNewMapVM.swift in Sources */,
+				159C01B127E616C500C19374 /* BootManager.swift in Sources */,
 				23BA1897270DCAFD00A18F4A /* Model.xcdatamodeld in Sources */,
 				23E047402719A69E00B8AB7C /* Map+CoreDataProperties.swift in Sources */,
 				23E0473F2719A69E00B8AB7C /* Map+CoreDataClass.swift in Sources */,
