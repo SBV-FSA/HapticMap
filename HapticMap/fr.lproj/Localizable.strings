@@ -154,6 +154,9 @@
 /* A title for official map element categories */
 "official_categories" = "Catégories officielles";
 
+/* Custom Categories */
+"other" = "Catégories personnalisées";
+
 /* Pedestrian Crossing */
 "pedestrianCrossing" = "Passage piéton";
 
