@@ -51,15 +51,15 @@ extension Category {
     var supportedFeedback: [Feedback] {
         switch self {
         case .border:
-            return [.sound, .haptic]
+            return [.sound, .haptic, .spoken]
         case .destination:
             return [.sound, .spoken]
         case .empty:
             return []
         case .intersection:
-            return [.audio, .haptic, .sound]
+            return [.audio, .haptic, .sound, .spoken]
         case .itinerary:
-            return [.audio, .haptic]
+            return [.audio, .haptic, .spoken]
         case .other:
             return [.haptic, .spoken]
         case .pedestrianCrossing:
@@ -67,7 +67,7 @@ extension Category {
         case .pedestrianCrossingWithLights:
             return [.haptic, .audio, .sound, .spoken]
         case .road:
-            return [.haptic, .audio]
+            return [.haptic, .audio, .spoken]
         }
     }
     
