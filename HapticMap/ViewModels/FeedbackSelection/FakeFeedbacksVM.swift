@@ -19,6 +19,8 @@ class FakeFeedbackTypesVM: FeedbacksVMProtocol {
         loadPreferences()
     }
     
+    func resetToDefault() {}
+    
     private func loadPreferences() {
         states = Feedback.allCases.map {FeedbackStateWrapper(feedback: $0, isOn: preferenceRepository.activeFeedbacks.contains($0))}
         states[0].isOn = true

@@ -163,6 +163,9 @@
 /* iOS Photo Library */
 "photo_library" = "Photo library";
 
+/* Reset Settings to Default */
+"reset_to_default" = "Reset to default settings";
+
 /* Road */
 "road" = "Road";
 
