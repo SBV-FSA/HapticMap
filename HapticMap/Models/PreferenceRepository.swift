@@ -84,6 +84,11 @@ class PreferenceRepository: ObservableObject {
     func set(feedback: Feedback, active: Bool) {
         if active {
             activeFeedbacks.insert(feedback)
+            if loadCategories(for: feedback).isEmpty {
+                Category.allCases.filter{$0.supportedFeedback.contains(feedback)}.forEach { category in
+                    set(category: category, for: feedback, to: true)
+                }
+            }
         } else {
             activeFeedbacks.remove(feedback)
         }
