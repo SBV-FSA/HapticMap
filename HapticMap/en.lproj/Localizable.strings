@@ -154,6 +154,9 @@
 /* A title for official map element categories */
 "official_categories" = "Official Categories";
 
+/* Custom Categories */
+"other" = "Custom Categories";
+
 /* Pedestrian Crossing */
 "pedestrianCrossing" = "Pedestrian Crossing";
 
@@ -162,6 +165,9 @@
 
 /* iOS Photo Library */
 "photo_library" = "Photo library";
+
+/* Reset Settings to Default */
+"reset_to_default" = "Reset to default settings";
 
 /* Road */
 "road" = "Road";

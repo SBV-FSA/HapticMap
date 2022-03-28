@@ -16,6 +16,7 @@ struct HapticMapApp: App {
     private var cancellables = [AnyCancellable]()
     
     init() {
+        BootManager.shared.appWillLaunch()
         
         #if TESTING
         persistenceController = PersistenceController(inMemory: true)
@@ -94,7 +95,6 @@ struct HapticMapApp: App {
         persistenceController = PersistenceController.shared
         let itineraryRepository = Repository<Itinerary>(managedObjectContext: persistenceController.container.viewContext)
         
-        
         contentView = AnyView(TabView(content: {
             NavigationView {ItinerariesView<ItinariesVM<Repository<Itinerary>>>()
                     .environmentObject(ItinariesVM(model: itineraryRepository))
@@ -122,22 +122,4 @@ struct HapticMapApp: App {
         }
         
     }
-}
-
-class ImportManager {
-    
-    static func importItinerary(from url: URL, persistenceController: PersistenceController) {
-        do {
-            let data = try Data(contentsOf: url)
-            let itineraryDto = try JSONDecoder().decode(ItineraryDto.self, from: data)
-            let context = persistenceController.container.viewContext
-            let _ = Itinerary(context: context, dto: itineraryDto)
-            try context.save()
-        } catch {
-            
-        }
-        
-        try? FileManager.default.removeItem(at: url)
-    }
-    
 }

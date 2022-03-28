@@ -54,6 +54,29 @@ class PreferenceRepository: ObservableObject {
         self.defaults = defaults
     }
     
+    /// Resets the persistent preferences to defaults settings. Those are suited for new users.
+    func resetToDefault() {
+        
+        // 1. Turn on haptic feedbacks on every category.
+        set(feedback: .haptic, active: true)
+        Category.allCases.filter{$0.supportedFeedback.contains(.haptic)}.forEach { category in
+            set(category: category, for: .haptic, to: true)
+        }
+        
+        // 2. Turn on sound feedbacks on every category.
+        set(feedback: .sound, active: true)
+        Category.allCases.filter{$0.supportedFeedback.contains(.sound)}.forEach { category in
+            set(category: category, for: .sound, to: true)
+        }
+        
+        // 3. Turn on audio description feedbacks on every category.
+        set(feedback: .spoken, active: true)
+        Category.allCases.filter{$0.supportedFeedback.contains(.spoken)}.forEach { category in
+            set(category: category, for: .spoken, to: true)
+        }
+        
+    }
+    
     /// Sets a feedback as active or not.
     /// - Parameters:
     ///   - feedback: The feedback to set.
@@ -61,6 +84,11 @@ class PreferenceRepository: ObservableObject {
     func set(feedback: Feedback, active: Bool) {
         if active {
             activeFeedbacks.insert(feedback)
+            if loadCategories(for: feedback).isEmpty {
+                Category.allCases.filter{$0.supportedFeedback.contains(feedback)}.forEach { category in
+                    set(category: category, for: feedback, to: true)
+                }
+            }
         } else {
             activeFeedbacks.remove(feedback)
         }

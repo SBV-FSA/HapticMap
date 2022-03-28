@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159C01AF27E6152900C19374 /* UserDefaults + variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01AE27E6152900C19374 /* UserDefaults + variables.swift */; };
+		159C01B127E616C500C19374 /* BootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01B027E616C500C19374 /* BootManager.swift */; };
+		159C01B327E6179200C19374 /* ImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C01B227E6179200C19374 /* ImportManager.swift */; };
+		159C01B527E644C600C19374 /* example.hcit in Resources */ = {isa = PBXBuildFile; fileRef = 159C01B427E644C600C19374 /* example.hcit */; };
 		23225EEB270AEEEA00DFC12E /* HapticMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */; };
 		23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EEE270AEEEB00DFC12E /* Assets.xcassets */; };
 		23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */; };
@@ -157,6 +161,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159C01AE27E6152900C19374 /* UserDefaults + variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + variables.swift"; sourceTree = "<group>"; };
+		159C01B027E616C500C19374 /* BootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootManager.swift; sourceTree = "<group>"; };
+		159C01B227E6179200C19374 /* ImportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportManager.swift; sourceTree = "<group>"; };
+		159C01B427E644C600C19374 /* example.hcit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.hcit; sourceTree = "<group>"; };
 		23225EE7270AEEEA00DFC12E /* HapticMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticMapApp.swift; sourceTree = "<group>"; };
 		23225EEE270AEEEB00DFC12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -327,6 +335,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154F57BE27E4C93000F7D219 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				159C01B427E644C600C19374 /* example.hcit */,
+				236034A627394A43000793D3 /* UTI Icons */,
+				23225EEE270AEEEB00DFC12E /* Assets.xcassets */,
+				154F57C027E4C94400F7D219 /* Vibrations */,
+				154F57BF27E4C93C00F7D219 /* Sounds */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		154F57BF27E4C93C00F7D219 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				23C7695C278DAEFF001694DD /* sounds_license.rtf */,
+				239F34D62733E5D600B517E4 /* intersection.wav */,
+				23F548E42731622A00144DC2 /* destination.wav */,
+				239F34DA2734075900B517E4 /* border.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		154F57C027E4C94400F7D219 /* Vibrations */ = {
+			isa = PBXGroup;
+			children = (
+				239F34D8273406B100B517E4 /* car_crash_1.ahap */,
+				239F34D42733D78B00B517E4 /* concrete_3.ahap */,
+			);
+			path = Vibrations;
+			sourceTree = "<group>";
+		};
 		23225EDE270AEEEA00DFC12E = {
 			isa = PBXGroup;
 			children = (
@@ -352,27 +392,20 @@
 		23225EE9270AEEEA00DFC12E /* HapticMap */ = {
 			isa = PBXGroup;
 			children = (
-				236034A627394A43000793D3 /* UTI Icons */,
+				23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */,
+				154F57BE27E4C93000F7D219 /* Assets */,
+				23BA1892270DCAA700A18F4A /* CoreData */,
 				23E04768271DA3EE00B8AB7C /* Extensions */,
+				23225F15270AF05200DFC12E /* Fakes - Mocks - Stubs */,
+				23225F16270AF05700DFC12E /* Models */,
+				23225EF0270AEEEB00DFC12E /* Preview Content */,
+				23C76959278D8EEE001694DD /* Utils */,
+				23225F14270AF04B00DFC12E /* Views */,
+				23225F17270AF06200DFC12E /* ViewModels */,
+				23270F92270F1D7E00FBDC37 /* Localizable.strings */,
 				23937CAC270DF5B500AC5FE1 /* HapticMapRelease.entitlements */,
 				23225F22270AF67100DFC12E /* HapticMap.entitlements */,
 				23BA189C270DE8D400A18F4A /* Info.plist */,
-				23BA1892270DCAA700A18F4A /* CoreData */,
-				23225F14270AF04B00DFC12E /* Views */,
-				23225F17270AF06200DFC12E /* ViewModels */,
-				23225F16270AF05700DFC12E /* Models */,
-				23225F15270AF05200DFC12E /* Fakes - Mocks - Stubs */,
-				23C76959278D8EEE001694DD /* Utils */,
-				23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */,
-				23225EEE270AEEEB00DFC12E /* Assets.xcassets */,
-				239F34D62733E5D600B517E4 /* intersection.wav */,
-				23F548E42731622A00144DC2 /* destination.wav */,
-				239F34DA2734075900B517E4 /* border.wav */,
-				239F34D8273406B100B517E4 /* car_crash_1.ahap */,
-				239F34D42733D78B00B517E4 /* concrete_3.ahap */,
-				23C7695C278DAEFF001694DD /* sounds_license.rtf */,
-				23225EF0270AEEEB00DFC12E /* Preview Content */,
-				23270F92270F1D7E00FBDC37 /* Localizable.strings */,
 			);
 			path = HapticMap;
 			sourceTree = "<group>";
@@ -616,6 +649,8 @@
 			isa = PBXGroup;
 			children = (
 				23C7695A278D8EFD001694DD /* ToneOutputUnit.swift */,
+				159C01B027E616C500C19374 /* BootManager.swift */,
+				159C01B227E6179200C19374 /* ImportManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -641,6 +676,7 @@
 				23E0476D271DACF200B8AB7C /* UIView + colorOfPoint.swift */,
 				2392B7DF2726B7120066189D /* URL + humanReadableName.swift */,
 				2351417E273010E6007436AF /* UserDefaults + makeClearedInstance.swift */,
+				159C01AE27E6152900C19374 /* UserDefaults + variables.swift */,
 				23D92779275504D5000018CB /* UIImage + colors.swift */,
 				23FE0472277332880059D776 /* UIImage + color.swift */,
 				2361B1B62785E35800903D39 /* CHHapticPattern + patterns.swift */,
@@ -814,6 +850,7 @@
 				23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */,
 				23270F90270F1D7E00FBDC37 /* Localizable.strings in Resources */,
 				236034AC27394A60000793D3 /* document_icon_22.png in Resources */,
+				159C01B527E644C600C19374 /* example.hcit in Resources */,
 				236034AB27394A60000793D3 /* document_icon_64.png in Resources */,
 				23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */,
 				239F34D72733E5D600B517E4 /* intersection.wav in Resources */,
@@ -860,7 +897,9 @@
 				23D927722747F91A000018CB /* Map+NSItemProvider.swift in Sources */,
 				2392B7DC2726AB260066189D /* NewMapVMError.swift in Sources */,
 				23514173272C2B9E007436AF /* NewItineraryVMProtocol.swift in Sources */,
+				159C01B327E6179200C19374 /* ImportManager.swift in Sources */,
 				23F548E1273143E700144DC2 /* SpokenFeedbackObserver.swift in Sources */,
+				159C01AF27E6152900C19374 /* UserDefaults + variables.swift in Sources */,
 				23E0478B271EB46B00B8AB7C /* RepositoryProtocol.swift in Sources */,
 				23E0A6C5273A81FF00BCE71B /* ActivityView.swift in Sources */,
 				23603495273910DD000793D3 /* MapDropDelegate.swift in Sources */,
@@ -928,6 +967,7 @@
 				23E0473E2719A69E00B8AB7C /* Itinerary+CoreDataProperties.swift in Sources */,
 				2350EFDF276B354200E2B6A3 /* MapInfoVMProtocol.swift in Sources */,
 				2392B7DE2726B3570066189D /* FakeNewMapVM.swift in Sources */,
+				159C01B127E616C500C19374 /* BootManager.swift in Sources */,
 				23BA1897270DCAFD00A18F4A /* Model.xcdatamodeld in Sources */,
 				23E047402719A69E00B8AB7C /* Map+CoreDataProperties.swift in Sources */,
 				23E0473F2719A69E00B8AB7C /* Map+CoreDataClass.swift in Sources */,
