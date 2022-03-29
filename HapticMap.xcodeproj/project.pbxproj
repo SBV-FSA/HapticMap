@@ -307,6 +307,7 @@
 		23FE047A2773331D0059D776 /* UIColor + isSimilar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + isSimilar.swift"; sourceTree = "<group>"; };
 		23FE047C277353BE0059D776 /* ElementDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementDto.swift; sourceTree = "<group>"; };
 		23FE047E277353D10059D776 /* LocalizedTextDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedTextDto.swift; sourceTree = "<group>"; };
+		FA994E6127F200370022FBE3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -826,6 +827,7 @@
 				en,
 				Base,
 				fr,
+				de,
 			);
 			mainGroup = 23225EDE270AEEEA00DFC12E;
 			packageReferences = (
@@ -1041,6 +1043,7 @@
 			children = (
 				23270F91270F1D7E00FBDC37 /* en */,
 				23270F93270F1D8400FBDC37 /* fr */,
+				FA994E6127F200370022FBE3 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
