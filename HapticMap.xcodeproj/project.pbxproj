@@ -14,7 +14,6 @@
 		23225EEB270AEEEA00DFC12E /* HapticMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225EEA270AEEEA00DFC12E /* HapticMapApp.swift */; };
 		23225EEF270AEEEB00DFC12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EEE270AEEEB00DFC12E /* Assets.xcassets */; };
 		23225EF2270AEEEB00DFC12E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */; };
-		23225F08270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F07270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift */; };
 		23225F19270AF09400DFC12E /* ItinerariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F18270AF09400DFC12E /* ItinerariesView.swift */; };
 		23225F1B270AF0E400DFC12E /* ItinariesVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F1A270AF0E400DFC12E /* ItinariesVMProtocol.swift */; };
 		23225F1D270AF17F00DFC12E /* ItinariesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23225F1C270AF17F00DFC12E /* ItinariesVM.swift */; };
@@ -66,7 +65,6 @@
 		2392B7DE2726B3570066189D /* FakeNewMapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7DD2726B3570066189D /* FakeNewMapVM.swift */; };
 		2392B7E02726B7120066189D /* URL + humanReadableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7DF2726B7120066189D /* URL + humanReadableName.swift */; };
 		2392B7E22726B78A0066189D /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E12726B78A0066189D /* URLExtensionsTests.swift */; };
-		2392B7E42726CD8B0066189D /* NewMapViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E32726CD8B0066189D /* NewMapViewUITests.swift */; };
 		2392B7E62726E09D0066189D /* SheetPresentationModeTesterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E52726E09D0066189D /* SheetPresentationModeTesterView.swift */; };
 		2392B7E82726E7A00066189D /* NewMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7E72726E7A00066189D /* NewMapViewModelTests.swift */; };
 		2392B7EB2726E88E0066189D /* FakeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392B7EA2726E88E0066189D /* FakeRepository.swift */; };
@@ -113,8 +111,6 @@
 		23E04776271DC59E00B8AB7C /* MapVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04775271DC59E00B8AB7C /* MapVMProtocol.swift */; };
 		23E04778271DC5A400B8AB7C /* MapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04777271DC5A400B8AB7C /* MapVM.swift */; };
 		23E0477A271DC61600B8AB7C /* MockMapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04779271DC61600B8AB7C /* MockMapVM.swift */; };
-		23E0477C271EA9D300B8AB7C /* ItineraryViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0477B271EA9D300B8AB7C /* ItineraryViewUITests.swift */; };
-		23E0477E271EAC0500B8AB7C /* MapViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0477D271EAC0500B8AB7C /* MapViewUITests.swift */; };
 		23E04782271EB17800B8AB7C /* AudioFeedbackObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04781271EB17800B8AB7C /* AudioFeedbackObserver.swift */; };
 		23E04786271EB19800B8AB7C /* FeedbackObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04785271EB19800B8AB7C /* FeedbackObserver.swift */; };
 		23E04788271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E04787271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift */; };
@@ -122,7 +118,6 @@
 		23E0478D271EB47A00B8AB7C /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0478C271EB47A00B8AB7C /* RepositoryError.swift */; };
 		23E0A6C3273A69D200BCE71B /* ItineraryNSItemProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0A6C2273A69D200BCE71B /* ItineraryNSItemProviderTests.swift */; };
 		23E0A6C5273A81FF00BCE71B /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0A6C4273A81FF00BCE71B /* ActivityView.swift */; };
-		23E0A6C7273A930900BCE71B /* FeedbackCategoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E0A6C6273A930900BCE71B /* FeedbackCategoriesUITests.swift */; };
 		23E0A6C8273A9EC300BCE71B /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351417C272FF253007436AF /* Feedback.swift */; };
 		23F548D727301BA600144DC2 /* FeedbacksVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548D627301BA600144DC2 /* FeedbacksVMProtocol.swift */; };
 		23F548D927301BAD00144DC2 /* FeedbacksVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F548D827301BAD00144DC2 /* FeedbacksVM.swift */; };
@@ -171,7 +166,6 @@
 		23225EF1270AEEEB00DFC12E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23225EF7270AEEEB00DFC12E /* HapticMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapticMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23225F01270AEEEB00DFC12E /* HapticMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HapticMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		23225F07270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		23225F18270AF09400DFC12E /* ItinerariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesView.swift; sourceTree = "<group>"; };
 		23225F1A270AF0E400DFC12E /* ItinariesVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinariesVMProtocol.swift; sourceTree = "<group>"; };
 		23225F1C270AF17F00DFC12E /* ItinariesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinariesVM.swift; sourceTree = "<group>"; };
@@ -228,7 +222,6 @@
 		2392B7DD2726B3570066189D /* FakeNewMapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewMapVM.swift; sourceTree = "<group>"; };
 		2392B7DF2726B7120066189D /* URL + humanReadableName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + humanReadableName.swift"; sourceTree = "<group>"; };
 		2392B7E12726B78A0066189D /* URLExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionsTests.swift; sourceTree = "<group>"; };
-		2392B7E32726CD8B0066189D /* NewMapViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapViewUITests.swift; sourceTree = "<group>"; };
 		2392B7E52726E09D0066189D /* SheetPresentationModeTesterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetPresentationModeTesterView.swift; sourceTree = "<group>"; };
 		2392B7E72726E7A00066189D /* NewMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapViewModelTests.swift; sourceTree = "<group>"; };
 		2392B7EA2726E88E0066189D /* FakeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRepository.swift; sourceTree = "<group>"; };
@@ -280,8 +273,6 @@
 		23E04775271DC59E00B8AB7C /* MapVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVMProtocol.swift; sourceTree = "<group>"; };
 		23E04777271DC5A400B8AB7C /* MapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVM.swift; sourceTree = "<group>"; };
 		23E04779271DC61600B8AB7C /* MockMapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapVM.swift; sourceTree = "<group>"; };
-		23E0477B271EA9D300B8AB7C /* ItineraryViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewUITests.swift; sourceTree = "<group>"; };
-		23E0477D271EAC0500B8AB7C /* MapViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewUITests.swift; sourceTree = "<group>"; };
 		23E04781271EB17800B8AB7C /* AudioFeedbackObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeedbackObserver.swift; sourceTree = "<group>"; };
 		23E04785271EB19800B8AB7C /* FeedbackObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackObserver.swift; sourceTree = "<group>"; };
 		23E04787271EB3EA00B8AB7C /* ItinerariesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariesViewModelTests.swift; sourceTree = "<group>"; };
@@ -289,7 +280,6 @@
 		23E0478C271EB47A00B8AB7C /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
 		23E0A6C2273A69D200BCE71B /* ItineraryNSItemProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryNSItemProviderTests.swift; sourceTree = "<group>"; };
 		23E0A6C4273A81FF00BCE71B /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
-		23E0A6C6273A930900BCE71B /* FeedbackCategoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCategoriesUITests.swift; sourceTree = "<group>"; };
 		23F548D627301BA600144DC2 /* FeedbacksVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksVMProtocol.swift; sourceTree = "<group>"; };
 		23F548D827301BAD00144DC2 /* FeedbacksVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksVM.swift; sourceTree = "<group>"; };
 		23F548DA27301BE200144DC2 /* FeedbackStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStateWrapper.swift; sourceTree = "<group>"; };
@@ -441,12 +431,7 @@
 		23225F04270AEEEB00DFC12E /* HapticMapUITests */ = {
 			isa = PBXGroup;
 			children = (
-				23225F07270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift */,
 				23270F94270F342900FBDC37 /* ItinariesViewUITests.swift */,
-				23E0477B271EA9D300B8AB7C /* ItineraryViewUITests.swift */,
-				23E0477D271EAC0500B8AB7C /* MapViewUITests.swift */,
-				2392B7E32726CD8B0066189D /* NewMapViewUITests.swift */,
-				23E0A6C6273A930900BCE71B /* FeedbackCategoriesUITests.swift */,
 			);
 			path = HapticMapUITests;
 			sourceTree = "<group>";
@@ -1012,11 +997,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23225F08270AEEEB00DFC12E /* HapticMapUITestsLaunchTests.swift in Sources */,
-				23E0A6C7273A930900BCE71B /* FeedbackCategoriesUITests.swift in Sources */,
-				23E0477E271EAC0500B8AB7C /* MapViewUITests.swift in Sources */,
-				2392B7E42726CD8B0066189D /* NewMapViewUITests.swift in Sources */,
-				23E0477C271EA9D300B8AB7C /* ItineraryViewUITests.swift in Sources */,
 				23E0A6C8273A9EC300BCE71B /* Feedback.swift in Sources */,
 				23270F95270F342900FBDC37 /* ItinariesViewUITests.swift in Sources */,
 			);
@@ -1257,7 +1237,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZF243P8CX;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1282,7 +1262,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZF243P8CX;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1306,7 +1286,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZF243P8CX;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1329,7 +1309,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZF243P8CX;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1456,7 +1436,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZF243P8CX;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1480,7 +1460,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZF243P8CX;
+				DEVELOPMENT_TEAM = Y4988ZJMVN;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
